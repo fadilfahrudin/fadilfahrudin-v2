@@ -1,0 +1,25 @@
+.jumbotron {
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  @include media.desktop {
+    align-items: center;
+    margin: 0 5%;
+    gap: 52px;
+    .jumbotron-text {
+      .btn-resume {
+        width: 305px;
+        height: 57px;
+        border-radius: 5px;
+        margin-top: 20px;
+        color: rgb(12, 12, 70);
+        font-size: 32px;
+      }
+      h5 {
+        font-size: 32px;
+      }
+    }
+  }
+}
