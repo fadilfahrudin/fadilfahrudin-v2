@@ -1,7 +1,9 @@
+import { logoFadil } from "../../assets/img";
+
 const NavbarComponent = () => {
     return (
         <div className="navigation">
-            <div className="home-brand">Fadil Fahrudin</div>
+            <img src={logoFadil} alt="Fadil Fahrduin" className="home-brand" width={'5%'} />
             <ul>
                 <li>Home</li>
                 <li>About</li>

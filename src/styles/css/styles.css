@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", roboto, sans-serif;
+  border: 0;
+  background-color: transparent;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  border: 1px solid black;
+}
+
+.tools-wrapp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 5px;
+}
+.tools-wrapp .tool {
+  width: 30px;
+  height: 30px;
+}
+
+.expartise {
+  padding: 10px 5%;
+}
+.expartise .tools-stack {
+  display: flex;
+}
+
+.card-wrapp {
+  position: relative;
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card-wrapp .card {
+  flex-grow: 1;
+  width: 40%;
+  height: 550px;
+  padding: 15px;
+  position: relative;
+  overflow-y: hidden;
+}
+.card-wrapp .card h5 {
+  font-size: 1.75rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.card-wrapp .card .img-project {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.card-wrapp .card .tools-stack-project {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.navigation {
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 1076px) {
+  .navigation .home-brand {
+    font-size: 12px;
+    color: rgb(12, 12, 70);
+  }
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 12px;
+  }
+  .navigation ul li {
+    color: rgb(12, 12, 70);
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+}
+
+.jumbotron {
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+}
+@media (min-width: 1076px) {
+  .jumbotron {
+    align-items: center;
+    margin: 0 5%;
+    gap: 52px;
+  }
+  .jumbotron .jumbotron-text .btn-resume {
+    width: 305px;
+    height: 57px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(12, 12, 70);
+    font-size: 32px;
+  }
+  .jumbotron .jumbotron-text h5 {
+    font-size: 32px;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px 5%;
+  text-align: center;
+  line-height: 30px;
+}
+footer .line-break {
+  height: 2px;
+  width: 100%;
+  background-color: #f2a365;
+  margin-bottom: 20px;
+}
+footer h5 {
+  font-size: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #f2a365;
+}
+footer a:hover {
+  color: #0a1e39;
+}
+
+.loading::before {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=styles.css.map */

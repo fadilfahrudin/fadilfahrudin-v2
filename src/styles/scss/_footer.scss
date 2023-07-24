@@ -1,0 +1,22 @@
+footer {
+  margin-top: 20px;
+  padding: 10px 5%;
+  text-align: center;
+  line-height: 30px;
+  .line-break {
+    height: 2px;
+    width: 100%;
+    background-color: #f2a365;
+    margin-bottom: 20px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #f2a365;
+  }
+  a:hover {
+    color: #0a1e39;
+  }
+}
