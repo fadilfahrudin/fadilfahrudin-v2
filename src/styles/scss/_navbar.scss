@@ -18,6 +18,20 @@
         color: rgb(12, 12, 70);
         cursor: pointer;
         padding: 5px 10px;
+        width: max-content;
+        height: max-content;
+        transition: all 0.4s ease-in-out;
+      }
+
+      li:hover {
+        background-color: #f2a365;
+        font-weight: bold;
+        box-shadow: 4px 10px 0px 0px #0a1e39;
+      }
+
+      .active {
+        background-color: #f2a365;
+        font-weight: bold;
       }
     }
   }

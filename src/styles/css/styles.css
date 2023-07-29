@@ -32,6 +32,14 @@
 .expartise {
   padding: 10px 5%;
 }
+.expartise h5 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 .expartise .tools-stack {
   display: flex;
 }
@@ -95,6 +103,18 @@
     color: rgb(12, 12, 70);
     cursor: pointer;
     padding: 5px 10px;
+    width: max-content;
+    height: max-content;
+    transition: all 0.4s ease-in-out;
+  }
+  .navigation ul li:hover {
+    background-color: #f2a365;
+    font-weight: bold;
+    box-shadow: 4px 10px 0px 0px #0a1e39;
+  }
+  .navigation ul .active {
+    background-color: #f2a365;
+    font-weight: bold;
   }
 }
 
