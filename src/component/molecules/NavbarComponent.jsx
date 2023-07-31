@@ -1,15 +1,11 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import { logoFadil } from "../../assets/img";
 
 const NavbarComponent = () => {
 
+    const navigate = useNavigate()
     const curentUrl = window.location.pathname;
-    const [active, setActive] = useState(false);
-
-    const navigate = () => {
-        console.log(curentUrl);
-    }
 
     const menus = [
         {
@@ -37,7 +33,7 @@ const NavbarComponent = () => {
             <img src={logoFadil} alt="Fadil Fahrduin" className="home-brand" width={'5%'} />
             <ul>
                 {menus.map((menu) => (
-                    <li key={menu.id} className={curentUrl === menu.link ? "active" : ""} onClick={() => navigate()}>{menu.title}</li>
+                    <NavLink to={menu.link} key={menu.id} className={({ isActive, isPending }) => isPending ? 'pending' : isActive ? 'active' : ""}>{menu.title}</NavLink>
                 ))}
             </ul>
         </nav>

@@ -1,5 +1,5 @@
 import { logoBootstrap, logoCss, logoFigma, logoGithub, logoHtml, logoJs, logoLaravel, logoPhp } from "../../assets/img";
-import ToolsStack from "../atoms/Tools";
+import ToolsStack from "../atomic/Tools";
 
 const ExpatiseComponent = () => {
     return (

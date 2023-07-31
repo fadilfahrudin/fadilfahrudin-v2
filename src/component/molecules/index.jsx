@@ -4,5 +4,6 @@ import CardComponent from "./CardComponent";
 import FooterComponent from "./FooterComponent";
 import MainContentComponent from "./MainContentComponent";
 import ExpatiseComponent from "./ExpatiseComponent";
+import CardProject from "./CardProject";
 
-export { ExpatiseComponent, MainContentComponent, JumbotronComponent, NavbarComponent, CardComponent, FooterComponent };
+export { CardProject, ExpatiseComponent, MainContentComponent, JumbotronComponent, NavbarComponent, CardComponent, FooterComponent };

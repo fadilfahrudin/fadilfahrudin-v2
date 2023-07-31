@@ -1,11 +1,8 @@
-import { ExpatiseComponent, FooterComponent, JumbotronComponent, MainContentComponent, NavbarComponent } from "../component/molekuls";
+import { ExpatiseComponent, JumbotronComponent, MainContentComponent } from "../component/molecules";
 
 const MainApp = () => {
     return (
-        <div className="container">
-            {/* Navbar */}
-            <NavbarComponent />
-
+        <div>
             {/* Jumbotron */}
             <JumbotronComponent />
 
@@ -14,10 +11,6 @@ const MainApp = () => {
 
             {/* Main Card */}
             <MainContentComponent />
-
-            {/* Footer */}
-            <FooterComponent />
-
         </div>
     );
 };

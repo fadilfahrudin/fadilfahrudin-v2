@@ -1,5 +1,5 @@
 import { logoFigma } from "../../assets/img"
-import ToolsStack from "../atoms/Tools"
+import ToolsStack from "../atomic/Tools"
 
 // eslint-disable-next-line react/prop-types
 const CardComponent = ({ backgroundColor, img, nameProject }) => {
