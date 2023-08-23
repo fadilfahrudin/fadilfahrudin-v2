@@ -1,9 +1,7 @@
 .jumbotron {
   color: #000;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   display: flex;
+  min-height: 100vh;
   @include media.desktop {
     align-items: center;
     margin: 0 5%;
@@ -15,11 +13,27 @@
         border-radius: 5px;
         margin-top: 20px;
         color: rgb(12, 12, 70);
-        font-size: 32px;
+        font-size: 2rem;
+        font-weight: 400;
+        transition: all 0.2s ease-in-out;
+        cursor: alias;
+      }
+      .btn-resume:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 0px 2px #0a1e39;
+        font-weight: 500;
+        outline: #0a1e39 solid 2px;
+        color: #0a1e39;
       }
       h5 {
-        font-size: 32px;
+        font-size: 2rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
       }
+    }
+    .jumbotron-hero {
+      aspect-ratio: 1/1;
     }
   }
 }

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
   @include media.desktop {
     .home-brand {
       font-size: 12px;
@@ -21,17 +20,21 @@
         padding: 5px 10px;
         width: max-content;
         height: max-content;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.4s;
+        border-radius: 4px;
       }
 
       a:hover {
-        background-color: #f2a365;
+        // background-color: #fff;
         font-weight: bold;
-        box-shadow: 4px 10px 0px 0px #0a1e39;
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 0px 2px #0a1e39;
+        outline: #0a1e39 solid 2px;
       }
 
       .active {
-        background-color: #f2a365;
+        background-color: #fff;
+        border: solid 1px #0a1e39;
         font-weight: bold;
       }
     }

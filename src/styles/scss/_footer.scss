@@ -6,7 +6,7 @@ footer {
   .line-break {
     height: 2px;
     width: 100%;
-    background-color: #f2a365;
+    background-color: #0a1e39;
     margin-bottom: 20px;
   }
   h5 {
@@ -14,9 +14,15 @@ footer {
   }
   a {
     text-decoration: none;
-    color: #f2a365;
+    color: #0a1e39;
+    transition: 0.4s;
   }
   a:hover {
-    color: #0a1e39;
+    font-weight: 700;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px 2px #0a1e39;
+    outline: #0a1e39 solid 2px;
   }
 }

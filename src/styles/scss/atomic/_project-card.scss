@@ -1,0 +1,77 @@
+.card-project {
+  width: 405px;
+  height: 234px;
+  background-color: #fff;
+  color: #0a1e39;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 28px 15px;
+  gap: 14px;
+
+  transition: 0.2s ease-in;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.274);
+
+  @include media.desktop {
+    .main-card {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      gap: 5px;
+      overflow: hidden;
+      .header-card {
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+      }
+      .body-text-card {
+        height: 70px;
+        overflow: hidden;
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .more-details {
+          text-decoration: none;
+        }
+        .more-details:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      .teach-stack {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+      .teach-stack::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .brand-project {
+      aspect-ratio: 1/1;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.card-project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 0px 2px #0a1e39;
+  outline: #0a1e39 solid 2px;
+}

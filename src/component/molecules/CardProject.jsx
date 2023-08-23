@@ -1,23 +1,41 @@
-import { gerakanInfaqNutrisi, logoPhp } from "../../assets/img";
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+import { useEffect, useState } from "react";
 import ToolsStack from "../atomic/Tools";
 
-const CardProject = () => {
+const CardProject = ({ header, excerpt, brandProject, stackId }) => {
+    const techStackId = stackId.split(",")
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        getStack()
+    }, [])
+
+    const getStack = async () => {
+        try {
+            const response = await fetch(`http://localhost:5000/api/techstacks`)
+            const data = await response.json()
+            setData(data.result)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     return (
         <div className="card-project">
-            <div className="left-content">
-                <img src={gerakanInfaqNutrisi} alt="" className="img-project" />
-                <div className="tech-stack">
-                    <ToolsStack icon={logoPhp} nameIcon={'PHP'} width={26} height={26} />
-                    <ToolsStack icon={logoPhp} nameIcon={'PHP'} width={26} height={26} />
-                    <ToolsStack icon={logoPhp} nameIcon={'PHP'} width={26} height={26} />
-                    <ToolsStack icon={logoPhp} nameIcon={'PHP'} width={26} height={26} />
+            <div className="main-card">
+                <h5 className="header-card">{header}</h5>
+                <div className="body-text-card"><p>{excerpt}</p><a href="#" className="more-details">click here more detail &#8674;</a></div>
+                <div className="teach-stack">
+                    {techStackId.map(techId => {
+                        const filter = data.filter((stack) => stack.id == techId)
+                        return filter.map((item) => (
+                            <ToolsStack key={item.id} icon={item.iconUrl} nameIcon={item.name} width={26} height={26} />
+                        ))
+                    })}
                 </div>
             </div>
-            <div className="right-content">
-                <h3>Semangat Bantu</h3>
-                <p>As a donation app. I made this for my final exam at Pamulang University with a case study that I took at my place of work, namely Semangat Bantu.</p>
-                <a href="#">See more details...</a>
-            </div>
+            <img src={brandProject} alt="Behance" className="brand-project" width='100%' height='100%' />
         </div>
     )
 }
