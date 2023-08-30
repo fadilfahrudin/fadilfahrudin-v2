@@ -1,0 +1,165 @@
+@include media.desktop {
+  .detail-page {
+    width: 70%;
+    margin: 0 auto;
+    // background-color: lavender;
+
+    .breadchumb {
+      width: max-content;
+      color: rgb(140, 140, 145);
+    }
+    .detail-article-wrapp {
+      // display: flex;
+      gap: 10px;
+      main {
+        padding: 30px;
+        width: 100%;
+        overflow-x: hidden;
+        .banner-content {
+          width: 100%;
+          height: 354px;
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+          margin: 10px 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .header-article {
+          font-size: 2.75rem;
+          color: #292828;
+        }
+        .info-created {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          p {
+            color: rgb(140, 140, 145);
+          }
+          .socialmedia-body {
+            width: max-content;
+            height: 50px;
+            padding: 5px 20px;
+            // background-color: lavender;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            p {
+              // font-size: 12px;
+              font-weight: 400;
+              color: rgb(140, 140, 145);
+            }
+            .sos-wrapp {
+              display: flex;
+              gap: 5px;
+              list-style: none;
+              .sos-item {
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+        article {
+          font-size: 1.25rem;
+          line-height: 35px;
+        }
+      }
+
+      .btn-visit-project {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        color: #292828;
+        background-color: lavender;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .btn-visit-project:hover {
+        font-weight: 700;
+        color: #0a1e39;
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 0px 2px #0a1e39;
+        outline: #0a1e39 solid 2px;
+      }
+
+      // aside {
+      //   width: 35%;
+      //   display: flex;
+      //   flex-direction: column;
+      //   gap: 20px;
+      //   .recommended-card {
+      //     width: 100%;
+      //     height: 150px;
+      //     background-color: lavender;
+      //     border-radius: 20px;
+      //     padding: 20px;
+      //     display: flex;
+      //     gap: 10px;
+      //     align-items: center;
+      //     .recommended-body {
+      //       display: flex;
+      //       flex-direction: column;
+      //       gap: 5px;
+      //       .recommended-header {
+      //         font-size: 1rem;
+      //         line-height: 25px;
+      //         font-weight: 600;
+      //         color: #292828;
+      //         display: -webkit-box;
+      //         -webkit-box-orient: vertical;
+      //         -webkit-line-clamp: 3;
+      //         text-overflow: ellipsis;
+      //         overflow: hidden;
+      //       }
+      //       p {
+      //         color: rgb(140, 140, 145);
+      //       }
+      //     }
+      //     .recommended-thumb {
+      //       width: 80px;
+      //       height: 60px;
+      //       aspect-ratio: 6/4;
+      //       object-fit: cover;
+      //       border-radius: 5px;
+      //     }
+      //   }
+      //   .socialmedia-card {
+      //     .socialmedia-header {
+      //       font-weight: 500;
+      //       color: #292828;
+      //     }
+      //     .socialmedia-body {
+      //       width: 100%;
+      //       height: 50px;
+      //       border-radius: 15px;
+      //       background-color: lavender;
+      //       display: flex;
+      //       justify-content: center;
+      //       align-items: center;
+      //       .sos-wrapp {
+      //         display: flex;
+      //         gap: 20px;
+      //         list-style: none;
+      //         .sos-item {
+      //           width: 30px;
+      //           height: 30px;
+      //         }
+      //       }
+      //     }
+      //   }
+      //   .author-card {
+      //     width: 100%;
+      //     height: 200px;
+      //     border-radius: 25px;
+      //     background-color: lavender;
+      //   }
+      // }
+    }
+  }
+}

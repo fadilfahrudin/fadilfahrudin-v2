@@ -1,0 +1,42 @@
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+@font-face {
+  font-family: "Inter";
+  src: url(../../assets/font/Inter-VariableFont_slnt\wght.ttf);
+}
+@font-face {
+  font-family: "Inter-Light";
+  src: url(../../assets/font/Inter-Light.ttf);
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url(../../assets/font/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../../assets/font/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(../../assets/font/Inter-Bold.ttf);
+}
+
+// Color variables default
+$primary-color: #fff;
+$secondary-color: lavender;
+$secondary-thin-color: #a5a4a4;
+$dark-color: #292828;
+$dark-navy-color: #0a1e39;
+
+// Font variables color
+$text-dark: $dark-color;
+$text-primary: $primary-color;
+$text-primary-thin: $secondary-thin-color;
+
+// Background color variables
+$bg-dark: $dark-color;
+$bg-navy: $dark-navy-color;
+$bg-light: $primary-color;
+$bg-secondary: $secondary-color;
+$bg-light-thin: $secondary-thin-color;

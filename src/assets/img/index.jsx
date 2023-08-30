@@ -17,8 +17,14 @@ import sbApps from './sb-apps.png';
 import sbAdmin from './admin-sb.svg';
 import gerakanInfaqNutrisi from './gerakan-infaq-nutrisi.png';
 import studyApp from './study-app.png';
+import defaulBanner from './default-background-article.svg';
+import defaulUser from './user-profile-default.svg';
+import defaultLogo from './logo-project-default.svg'
 
 export {
+    defaulBanner,
+    defaulUser,
+    defaultLogo,
     sbAdmin,
     sbApps,
     gerakanInfaqNutrisi,

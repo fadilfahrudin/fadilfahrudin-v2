@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { CardProject } from "../component/molecules";
+import APIconfig from "../config/APIConfig"
 
 const Project = () => {
 
@@ -12,7 +13,7 @@ const Project = () => {
 
     const getProject = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/articles`)
+            const response = await fetch(`${APIconfig.baseUrl}/articles`)
             const articles = await response.json();
             setArticles(articles.result)
         } catch (error) {
@@ -24,7 +25,7 @@ const Project = () => {
         <div className="project">
             <div className="wrapp-card-project">
                 {articles.map(article => (
-                    <CardProject key={article.id} header={article.title} excerpt={article.excerpt} brandProject={article.logo_project} stackId={article.techStackId} />
+                    <CardProject key={article.id} header={article.title} excerpt={article.excerpt} brandProject={article.logo_project} stackId={article.techStackId} articleId={article.id} />
                 ))}
             </div>
         </div>

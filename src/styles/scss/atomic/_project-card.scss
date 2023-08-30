@@ -44,9 +44,11 @@
         }
         .more-details {
           text-decoration: none;
+          margin: 2px 0;
         }
         .more-details:hover {
           text-decoration: underline;
+          color: #0a1e39;
           cursor: pointer;
         }
       }

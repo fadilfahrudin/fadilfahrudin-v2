@@ -1,5 +1,5 @@
 .jumbotron {
-  color: #000;
+  color: $text-dark;
   display: flex;
   min-height: 100vh;
   @include media.desktop {
