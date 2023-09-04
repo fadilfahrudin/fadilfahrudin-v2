@@ -4,8 +4,7 @@ import ToolsStack from "../atomic/Tools";
 const ExpatiseComponent = () => {
     return (
         <section className="expartise">
-            <h5>Currently Favorite technology that
-                accompanies me.</h5>
+            <h4>Current favorite tech stack:</h4>
             <div className="tools-stack">
                 <ToolsStack icon={logoJs} nameIcon={'Javascript'} height={30} width={30} />
                 <ToolsStack icon={logoHtml} nameIcon={'HTML'} height={30} width={30} />

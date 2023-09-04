@@ -1,5 +1,5 @@
 .navigation {
-  padding: 10px 5%;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,26 +15,26 @@
       gap: 12px;
       a {
         text-decoration: none;
-        color: rgb(12, 12, 70);
+        color: $text-navy;
         cursor: pointer;
-        padding: 5px 10px;
+        padding: 8px 12px;
         width: max-content;
         height: max-content;
         transition: all 0.4s;
         border-radius: 4px;
+        box-shadow: 0 0 0 0 $dark-navy-color;
       }
 
       a:hover {
-        // background-color: #fff;
         font-weight: bold;
         transform: translateY(-5px);
-        box-shadow: 0px 5px 0px 2px #0a1e39;
-        outline: #0a1e39 solid 2px;
+        box-shadow: 2px 5px 0 0 $dark-navy-color;
+        border: $dark-navy-color solid 1px;
       }
 
       .active {
         background-color: #fff;
-        border: solid 1px #0a1e39;
+        border: solid 1px $dark-navy-color;
         font-weight: bold;
       }
     }

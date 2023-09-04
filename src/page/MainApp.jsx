@@ -2,16 +2,14 @@ import { ExpatiseComponent, JumbotronComponent, MainContentComponent } from "../
 
 const MainApp = () => {
     return (
-        <div>
+        <main>
             {/* Jumbotron */}
             <JumbotronComponent />
-
             {/* Expatise */}
             <ExpatiseComponent />
-
             {/* Main Card */}
             <MainContentComponent />
-        </div>
+        </main>
     );
 };
 

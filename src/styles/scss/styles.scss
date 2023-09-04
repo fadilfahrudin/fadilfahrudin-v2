@@ -2,13 +2,14 @@
 
 @import "variables";
 @import "main";
-@import "navbar";
 @import "footer";
 @import "loading";
 @import "about";
 @import "detail-project";
 
 // Molecules
+@import "./molecules/container";
+@import "./molecules/navbar";
 @import "./molecules/jumbotron";
 @import "./molecules/project-page";
 
