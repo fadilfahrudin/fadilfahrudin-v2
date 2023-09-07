@@ -30,15 +30,23 @@ $dark-color: #292828;
 $dark-navy-color: #0a1e39;
 $shadow-color: #0a1e3965;
 
+$color-dark: #292828;
+$color-white: #fff;
+$color-white-thin: lavender;
+$color-white-dark: #d9d9d9;
+$color-dark-navy: #0a1e39;
+$color-shadow: #0a1e3965;
+
 // Font variables color
-$text-dark: $dark-color;
-$text-navy: $dark-navy-color;
-$text-primary: $primary-color;
-$text-primary-thin: $secondary-thin-color;
+$text-dark: $color-dark;
+$text-navy: $color-dark-navy;
+$text-white: $color-white;
+$text-white-thin: $color-white-thin;
+$text-white-dark: $color-white-dark;
 
 // Background color variables
 $bg-dark: $dark-color;
 $bg-navy: $dark-navy-color;
-$bg-light: $primary-color;
-$bg-secondary: $secondary-color;
-$bg-light-thin: $secondary-thin-color;
+$bg-white: $color-white;
+$bg-white-thin: $color-white-thin;
+$bg-white-dark: $color-white-dark;
