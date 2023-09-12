@@ -15,15 +15,15 @@ const NavbarComponent = () => {
         },
         {
             'id': 1,
-            'title': 'About',
-            'link': '/about',
-            'icon': 'icon-about',
-        },
-        {
-            'id': 2,
             'title': 'Projects',
             'link': '/project',
             'icon': 'icon-projects',
+        },
+        {
+            'id': 2,
+            'title': 'About',
+            'link': '/about',
+            'icon': 'icon-about',
         },
     ]
 

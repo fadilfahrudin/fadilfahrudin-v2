@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import onLoadData from "../../utils/skeleton";
 
 const BNComponents = () => {
     const navigate = useNavigate()
@@ -16,17 +15,17 @@ const BNComponents = () => {
         },
         {
             'id': 2,
-            'title': 'About',
-            'path': '/about',
-            'class': 'bn-about',
-            'icon': 'ic-about',
-        },
-        {
-            'id': 3,
             'title': 'Project',
             'path': '/project',
             'class': 'bn-project',
             'icon': 'ic-project',
+        },
+        {
+            'id': 3,
+            'title': 'About',
+            'path': '/about',
+            'class': 'bn-about',
+            'icon': 'ic-about',
         }
     ]
 
