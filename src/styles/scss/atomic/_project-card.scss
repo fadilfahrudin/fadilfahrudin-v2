@@ -26,6 +26,8 @@
         font-weight: 700;
         font-style: normal;
         line-height: normal;
+        min-width: 80%;
+        min-height: 30px;
       }
       .body-text-card {
         height: 70px;
@@ -65,9 +67,14 @@
     }
 
     .brand-project {
-      aspect-ratio: 1/1;
       width: 80px;
       height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
     }
   }
 }

@@ -5,7 +5,6 @@ import { logoFadil } from "../../assets/img";
 const NavbarComponent = () => {
 
     const navigate = useNavigate()
-    const curentUrl = window.location.pathname;
 
     const menus = [
         {
@@ -30,7 +29,7 @@ const NavbarComponent = () => {
 
     return (
         <nav className="navigation">
-            <img src={logoFadil} alt="Fadil Fahrduin" className="home-brand" width={'5%'} />
+            <img role="button" src={logoFadil} alt="Fadil Fahrduin" className="home-brand" width={'5%'} onClick={() => navigate('/')} />
             <ul>
                 {menus.map((menu) => (
                     <NavLink to={menu.link} key={menu.id} className={({ isActive, isPending }) => isPending ? 'pending' : isActive ? 'active' : ""}>{menu.title}</NavLink>

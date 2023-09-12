@@ -34,7 +34,14 @@
   border: 1px solid #292828;
 }
 
-.tools-wrapp {
+.tools-loading {
+  width: max-content;
+  height: max-content;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px 5px;
+}
+.tools-loading .tools-wrapp {
   width: max-content;
   height: max-content;
   padding: 10px;
@@ -43,7 +50,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px 5px;
 }
 
 .expartise {
@@ -117,7 +123,11 @@
   margin-bottom: 10px;
   color: #292828;
 }
-.main-project .card-wrapp .card .main-card-title p {
+.main-project .card-wrapp .card .main-card-title .card-sub {
+  height: 50px;
+  width: 100%;
+}
+.main-project .card-wrapp .card .main-card-title .card-sub p {
   font-size: 1rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -129,6 +139,7 @@
   line-height: 140%;
 }
 .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
+  cursor: pointer;
   width: 40px;
   height: 40px;
   display: flex;
@@ -205,9 +216,9 @@
 }
 
 footer {
-  margin-top: 20px;
-  text-align: center;
-  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 footer .line-break {
   height: 2px;
@@ -215,15 +226,21 @@ footer .line-break {
   background-color: #0a1e39;
   margin-bottom: 20px;
 }
-footer h5 {
+footer .feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 70px;
+}
+footer .feedback .contact h5 {
   font-size: 20px;
 }
-footer .email-link {
+footer .feedback .contact .email-link {
   text-decoration: none;
   color: #0a1e39;
   transition: 0.4s;
 }
-footer .email-link:hover {
+footer .feedback .contact .email-link:hover {
   font-weight: 700;
   padding: 2px 4px;
   border-radius: 3px;
@@ -231,13 +248,13 @@ footer .email-link:hover {
   box-shadow: 0px 5px 0px 2px #0a1e39;
   outline: #0a1e39 solid 2px;
 }
-footer .social-media-wrapp {
+footer .feedback .social-media-wrapp {
   display: flex;
   justify-content: center;
   gap: 5px;
   margin: 10px 0;
 }
-footer .social-media-wrapp a {
+footer .feedback .social-media-wrapp a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -246,20 +263,18 @@ footer .social-media-wrapp a {
   justify-content: center;
   align-items: center;
 }
-footer .social-media-wrapp a .logo {
+footer .feedback .social-media-wrapp a .logo {
   width: 20px;
   height: 20px;
 }
-
-.loading::before {
-  background-color: grey;
-  width: 100%;
-  height: 100%;
+footer .license {
+  text-align: center;
+  line-height: 30px;
 }
 
 .about {
   display: inline-block;
-  padding: 10px 5%;
+  padding: 10px 1%;
   width: 100%;
   overflow: hidden;
 }
@@ -270,6 +285,8 @@ footer .social-media-wrapp a .logo {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
   }
   .about .hero-img img {
     width: 100%;
@@ -283,28 +300,34 @@ footer .social-media-wrapp a .logo {
     line-height: 100px; /* 50% */
   }
   .about .description .body-text {
-    color: #1a1a1a;
+    margin: 0 10%;
+    margin-bottom: 50px;
+  }
+  .about .description .body-text p {
+    color: #292828;
     text-align: justify;
-    font-size: 14px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
+    line-height: 32px; /* 171.429% */
+    margin-top: 32px;
   }
   .about .experience h5 {
     text-align: center;
-    color: #000;
+    color: #292828;
     font-size: 28px;
     font-weight: 500;
     line-height: 50px; /* 50% */
   }
   .about .experience hr {
-    background-color: rgba(0, 0, 0, 0.6901960784);
+    background-color: #292828;
     height: 2px;
     width: 10%;
     margin: 0 auto;
   }
   .about .experience .wrapp-card-experience {
+    margin: 0 auto;
     margin-top: 20px;
-    width: 100%;
+    width: max-content;
     display: flex;
     padding: 10px 0;
     overflow-x: scroll;
@@ -363,10 +386,6 @@ footer .social-media-wrapp a .logo {
     width: 70%;
     margin: 0 auto;
   }
-  .detail-page .breadchumb {
-    width: max-content;
-    color: rgb(140, 140, 145);
-  }
   .detail-page .detail-article-wrapp {
     gap: 10px;
   }
@@ -378,9 +397,9 @@ footer .social-media-wrapp a .logo {
   .detail-page .detail-article-wrapp main .banner-content {
     width: 100%;
     height: 354px;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     overflow: hidden;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
     margin: 10px 0;
   }
   .detail-page .detail-article-wrapp main .banner-content img {
@@ -391,6 +410,10 @@ footer .social-media-wrapp a .logo {
   .detail-page .detail-article-wrapp main .header-article {
     font-size: 2.75rem;
     color: #292828;
+    width: 80%;
+    min-height: 40px;
+    border-radius: 0.5rem;
+    margin-top: 30px;
   }
   .detail-page .detail-article-wrapp main .info-created {
     display: flex;
@@ -398,11 +421,14 @@ footer .social-media-wrapp a .logo {
     align-items: center;
     margin-bottom: 20px;
   }
-  .detail-page .detail-article-wrapp main .info-created p {
-    color: rgb(140, 140, 145);
+  .detail-page .detail-article-wrapp main .info-created .p {
+    min-width: 20%;
+    height: 20px;
+    border-radius: 0.25rem;
+    color: #d9d9d9;
   }
   .detail-page .detail-article-wrapp main .info-created .socialmedia-body {
-    width: max-content;
+    min-width: max-content;
     height: 50px;
     padding: 5px 20px;
     display: flex;
@@ -410,15 +436,16 @@ footer .social-media-wrapp a .logo {
     align-items: center;
   }
   .detail-page .detail-article-wrapp main .info-created .socialmedia-body p {
+    display: inline-block;
     font-weight: 400;
-    color: rgb(140, 140, 145);
+    color: #d9d9d9;
   }
   .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp {
     display: flex;
     gap: 5px;
     list-style: none;
   }
-  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp .sos-item {
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp li .sos-item {
     width: 30px;
     height: 30px;
   }
@@ -430,9 +457,9 @@ footer .social-media-wrapp a .logo {
     width: 100%;
     height: 50px;
     border-radius: 10px;
-    color: #292828;
+    color: #0a1e39;
     background-color: lavender;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
     cursor: pointer;
   }
   .detail-page .detail-article-wrapp .btn-visit-project:hover {
@@ -458,6 +485,7 @@ footer .social-media-wrapp a .logo {
   .navigation .home-brand {
     font-size: 12px;
     color: rgb(12, 12, 70);
+    cursor: pointer;
   }
   .navigation ul {
     display: flex;
@@ -531,6 +559,7 @@ footer .social-media-wrapp a .logo {
 @media (min-width: 1076px) {
   .project {
     width: 850px;
+    min-height: 75vh;
     margin: 0 auto;
   }
   .project .wrapp-card-project {
@@ -542,6 +571,7 @@ footer .social-media-wrapp a .logo {
 
 .wrapp-bn-navigation {
   position: fixed;
+  z-index: 999;
   bottom: -80px;
   left: 0;
   right: 0;
@@ -583,10 +613,11 @@ footer .social-media-wrapp a .logo {
   border-radius: 10px;
   width: 50px;
   height: 100%;
-  gap: 5px;
+  gap: 8px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
+  cursor: pointer;
 }
 .wrapp-bn-navigation .bn-navigation ul .link .bn-home .ic-home {
   content: url("../../assets/img/bt-home-ic.png");
@@ -596,7 +627,8 @@ footer .social-media-wrapp a .logo {
 .wrapp-bn-navigation .bn-navigation ul .link .bn-home:hover {
   width: 110px;
 }
-.wrapp-bn-navigation .bn-navigation ul .link .bn-home:hover::after {
+.wrapp-bn-navigation .bn-navigation ul .link .bn-home::after {
+  display: block;
   content: "Home";
   font-family: "Inter" sans-serif;
   font-weight: 400;
@@ -604,17 +636,9 @@ footer .social-media-wrapp a .logo {
   font-size: 18px;
 }
 .wrapp-bn-navigation .bn-navigation ul .link:has(.bn-active) .bn-home {
-  width: max-content;
+  width: 110px;
 }
-.wrapp-bn-navigation .bn-navigation ul .link:has(.bn-active) .bn-home::after {
-  content: "Home";
-  transition: all 0.5s ease-in-out;
-  font-family: "Inter" sans-serif;
-  font-weight: 400;
-  color: #0a1e39;
-  font-size: 18px;
-}
-.wrapp-bn-navigation .bn-navigation ul .link .bn-about .ic-home {
+.wrapp-bn-navigation .bn-navigation ul .link .bn-about .ic-about {
   content: url("../../assets/img/bt-about-ic.png");
   width: 30px;
   height: auto;
@@ -622,7 +646,8 @@ footer .social-media-wrapp a .logo {
 .wrapp-bn-navigation .bn-navigation ul .link .bn-about:hover {
   width: 110px;
 }
-.wrapp-bn-navigation .bn-navigation ul .link .bn-about:hover::after {
+.wrapp-bn-navigation .bn-navigation ul .link .bn-about::after {
+  display: block;
   content: "About";
   font-family: "Inter" sans-serif;
   font-weight: 400;
@@ -630,16 +655,9 @@ footer .social-media-wrapp a .logo {
   font-size: 18px;
 }
 .wrapp-bn-navigation .bn-navigation ul .link:has(.bn-active) .bn-about {
-  width: max-content;
+  width: 110px;
 }
-.wrapp-bn-navigation .bn-navigation ul .link:has(.bn-active) .bn-about::after {
-  content: "About";
-  font-family: "Inter" sans-serif;
-  font-weight: 400;
-  color: #0a1e39;
-  font-size: 18px;
-}
-.wrapp-bn-navigation .bn-navigation ul .link .bn-project .ic-home {
+.wrapp-bn-navigation .bn-navigation ul .link .bn-project .ic-project {
   content: url("../../assets/img/bt-project-ic.png");
   width: 30px;
   height: auto;
@@ -647,7 +665,8 @@ footer .social-media-wrapp a .logo {
 .wrapp-bn-navigation .bn-navigation ul .link .bn-project:hover {
   width: 120px;
 }
-.wrapp-bn-navigation .bn-navigation ul .link .bn-project:hover::after {
+.wrapp-bn-navigation .bn-navigation ul .link .bn-project::after {
+  display: block;
   content: "Project";
   font-family: "Inter" sans-serif;
   font-weight: 400;
@@ -655,14 +674,7 @@ footer .social-media-wrapp a .logo {
   font-size: 18px;
 }
 .wrapp-bn-navigation .bn-navigation ul .link:has(.bn-active) .bn-project {
-  width: max-content;
-}
-.wrapp-bn-navigation .bn-navigation ul .link:has(.bn-active) .bn-project::after {
-  content: "Project";
-  font-family: "Inter" sans-serif;
-  font-weight: 400;
-  color: #0a1e39;
-  font-size: 18px;
+  width: 120px;
 }
 .wrapp-bn-navigation .to-the-top {
   position: relative;
@@ -720,7 +732,7 @@ footer .social-media-wrapp a .logo {
 
 @keyframes bn-animation {
   to {
-    transform: translateY(-110px);
+    transform: translateY(-120px);
   }
 }
 .card-project {
@@ -751,6 +763,8 @@ footer .social-media-wrapp a .logo {
     font-weight: 700;
     font-style: normal;
     line-height: normal;
+    min-width: 80%;
+    min-height: 30px;
   }
   .card-project .main-card .body-text-card {
     height: 70px;
@@ -786,9 +800,14 @@ footer .social-media-wrapp a .logo {
     display: none;
   }
   .card-project .brand-project {
-    aspect-ratio: 1/1;
     width: 80px;
     height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .card-project .brand-project img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
   }
 }
 
@@ -796,4 +815,56 @@ footer .social-media-wrapp a .logo {
   transform: translateY(-5px);
   box-shadow: 0px 5px 0px 2px #0a1e39;
   outline: #0a1e39 solid 2px;
+}
+
+.loading {
+  position: relative;
+}
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(207, 205, 210);
+  background: linear-gradient(90deg, rgba(207, 205, 210, 0.9976365546) 0%, rgb(223, 218, 218) 37%);
+  background-size: 200%;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  animation: loading 1s infinite reverse;
+}
+
+.load-item {
+  display: none !important;
+}
+
+.icon-load-wrapp {
+  display: flex;
+  gap: 5px;
+}
+.icon-load-wrapp .icon-load {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
+}
+
+.p-load {
+  width: 100%;
+  height: 20px;
+  border-radius: 0.25rem;
+  display: block;
+  margin: 5px 0;
+}
+.p-load:nth-child(4) {
+  width: 80%;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

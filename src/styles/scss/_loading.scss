@@ -1,5 +1,55 @@
-.loading::before {
-  background-color: grey;
+.loading {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(207, 205, 210);
+    background: linear-gradient(
+      90deg,
+      rgba(207, 205, 210, 0.9976365546218487) 0%,
+      rgba(223, 218, 218, 1) 37%
+    );
+    background-size: 200%;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    animation: loading 1s infinite reverse;
+  }
+}
+
+.load-item {
+  display: none !important;
+}
+
+.icon-load-wrapp {
+  display: flex;
+  gap: 5px;
+  .icon-load {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+  }
+}
+
+.p-load {
   width: 100%;
-  height: 100%;
+  height: 20px;
+  border-radius: 0.25rem;
+  display: block;
+  margin: 5px 0;
+  &:nth-child(4) {
+    width: 80%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }

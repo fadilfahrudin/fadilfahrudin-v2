@@ -1,20 +1,19 @@
 /* eslint-disable no-unused-vars */
 import { useParams } from "react-router-dom";
-import { defaulBanner } from "../assets/img";
 import { useEffect, useState } from "react";
 import APIConfig from "../config/APIConfig";
+import onLoadData from "../utils/skeleton";
 
 const DetailProject = () => {
     const { id } = useParams();
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [banner, setBanner] = useState(defaulBanner);
+    const [banner, setBanner] = useState('');
     const [createdAt, setCreatedAt] = useState();
     const [author, setAuthor] = useState('');
     const [techId, settechId] = useState('');
     const [techStacks, setTechStacks] = useState([]);
     const techStackId = techId.split(",");
-
 
     // Get Artilce
     useEffect(() => {
@@ -31,6 +30,7 @@ const DetailProject = () => {
             setDescription(data.description)
             setCreatedAt(data.created_at)
             settechId(data.techStackId)
+            onLoadData();
         } catch (error) {
             console.log(error)
         }
@@ -68,24 +68,27 @@ const DetailProject = () => {
     const newDate = month + " " + date + ", " + year
     // End set tanggal bulan tahun
 
-
     return (
-        <div className="detail-page">
+        <div className="detail-page" >
             <div className="detail-article-wrapp">
                 <main>
-                    <div className="breadchumb">
-                        Project / detail
-                    </div>
-                    <div className="banner-content">
+                    <div className="loading banner-content">
                         <img src={banner} alt="banner" width={650} height={354} />
                     </div>
-                    <h1 className="header-article">
+                    <h1 className="loading header-article" >
                         {title.slice(0, 1).toUpperCase() + title.slice(1)}
                     </h1>
                     <div className="info-created">
-                        <p>{newDate} | {author.slice(0, 1).toUpperCase() + author.slice(1)}</p>
+                        <p className="loading p">{newDate} | {author.slice(0, 1).toUpperCase() + author.slice(1)}</p>
                         <div className="socialmedia-body">
                             <p>Tech Stacks:</p>
+                            {/* Skeleton */}
+                            <div className="icon-load-wrapp" >
+                                <div className="icon-load loading"></div>
+                                <div className="icon-load loading"></div>
+                                <div className="icon-load loading"></div>
+                            </div>
+                            {/* End Skeleton */}
                             <ul className="sos-wrapp">
                                 {techStackId.map(techId => {
                                     const filter = techStacks.filter((stack) => stack.id == techId)
@@ -100,35 +103,14 @@ const DetailProject = () => {
                     </div>
                     <article>
                         <div dangerouslySetInnerHTML={markup}></div>
+                        {/* Skeleton */}
+                        <p className="p-load loading"></p>
+                        <p className="p-load loading"></p>
+                        <p className="p-load loading"></p>
+                        {/* End Skeleton */}
                     </article>
                 </main>
                 <button type="button" className="btn-visit-project">Visit project app</button>
-                {/* <aside> */}
-                {/* <div className="author-card"></div> */}
-                {/* <div className="socialmedia-card">
-                        <h3 className="socialmedia-header">Tech Staks</h3>
-                        <div className="socialmedia-body">
-                            <ul className="sos-wrapp">
-                                <li><a href="#">
-                                    <img src={logoIg} className="sos-item" />
-                                </a></li>
-                                <li><a href="#">
-                                    <img src={logoYoutube} className="sos-item" />
-                                </a></li>
-                                <li><a href="#">
-                                    <img src={logoDribbble} className="sos-item" />
-                                </a></li>
-                            </ul>
-                        </div>
-                    </div> */}
-                {/* <div className="recommended-card">
-                        <div className="recommended-body">
-                            <h2 className="recommended-header">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda modi blanditiis a delectus beatae pariatur officia esse. Molestias mollitia magnam cumque perspiciatis sapiente quaerat, ut nulla ipsam optio. Corrupti, deserunt?</h2>
-                            <p>18 Ags 2021</p>
-                        </div>
-                        <img src={defaulBanner} alt="recomended title" className="recommended-thumb" />
-                    </div> */}
-                {/* </aside> */}
             </div>
         </div>
     )

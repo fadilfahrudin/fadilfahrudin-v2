@@ -3,7 +3,6 @@
 @import "variables";
 @import "main";
 @import "footer";
-@import "loading";
 @import "about";
 @import "detail-project";
 
@@ -16,3 +15,4 @@
 
 // Atomic
 @import "./atomic/project-card";
+@import "loading";

@@ -1,5 +1,6 @@
 .wrapp-bn-navigation {
   position: fixed;
+  z-index: 999;
   bottom: -80px;
   left: 0;
   right: 0;
@@ -42,10 +43,11 @@
           border-radius: 10px;
           width: 50px;
           height: 100%;
-          gap: 5px;
+          gap: 8px;
           text-decoration: none;
           transition: all 0.5s ease-in-out;
           overflow: hidden;
+          cursor: pointer;
         }
         // Home button style
         .bn-home {
@@ -57,7 +59,8 @@
           &:hover {
             width: 110px;
           }
-          &:hover::after {
+          &::after {
+            display: block;
             content: "Home";
             font-family: "Inter" sans-serif;
             font-weight: 400;
@@ -68,21 +71,13 @@
 
         // If active state
         &:has(.bn-active) .bn-home {
-          width: max-content;
-        }
-        &:has(.bn-active) .bn-home::after {
-          content: "Home";
-          transition: all 0.5s ease-in-out;
-          font-family: "Inter" sans-serif;
-          font-weight: 400;
-          color: $text-navy;
-          font-size: 18px;
+          width: 110px;
         }
         // End Home button style
 
         // About button style
         .bn-about {
-          .ic-home {
+          .ic-about {
             content: url("../../assets/img/bt-about-ic.png");
             width: 30px;
             height: auto;
@@ -90,7 +85,8 @@
           &:hover {
             width: 110px;
           }
-          &:hover::after {
+          &::after {
+            display: block;
             content: "About";
             font-family: "Inter" sans-serif;
             font-weight: 400;
@@ -99,20 +95,12 @@
           }
         }
         &:has(.bn-active) .bn-about {
-          width: max-content;
+          width: 110px;
         }
-        &:has(.bn-active) .bn-about::after {
-          content: "About";
-          font-family: "Inter" sans-serif;
-          font-weight: 400;
-          color: $text-navy;
-          font-size: 18px;
-        }
-        // End About button styles
 
         // Project button style
         .bn-project {
-          .ic-home {
+          .ic-project {
             content: url("../../assets/img/bt-project-ic.png");
             width: 30px;
             height: auto;
@@ -120,7 +108,8 @@
           &:hover {
             width: 120px;
           }
-          &:hover::after {
+          &::after {
+            display: block;
             content: "Project";
             font-family: "Inter" sans-serif;
             font-weight: 400;
@@ -129,14 +118,7 @@
           }
         }
         &:has(.bn-active) .bn-project {
-          width: max-content;
-        }
-        &:has(.bn-active) .bn-project::after {
-          content: "Project";
-          font-family: "Inter" sans-serif;
-          font-weight: 400;
-          color: $text-navy;
-          font-size: 18px;
+          width: 120px;
         }
       }
     }
@@ -199,6 +181,6 @@
 
 @keyframes bn-animation {
   to {
-    transform: translateY(-110px);
+    transform: translateY(-120px);
   }
 }

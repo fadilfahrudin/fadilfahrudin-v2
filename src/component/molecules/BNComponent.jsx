@@ -1,7 +1,35 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import onLoadData from "../../utils/skeleton";
 
 const BNComponents = () => {
+    const navigate = useNavigate()
+    const pathName = window.location.pathname;
+
+    const menus = [
+        {
+            'id': 1,
+            'title': 'Home',
+            'path': '/',
+            'class': 'bn-home',
+            'icon': 'ic-home',
+        },
+        {
+            'id': 2,
+            'title': 'About',
+            'path': '/about',
+            'class': 'bn-about',
+            'icon': 'ic-about',
+        },
+        {
+            'id': 3,
+            'title': 'Project',
+            'path': '/project',
+            'class': 'bn-project',
+            'icon': 'ic-project',
+        }
+    ]
+
     // eslint-disable-next-line no-unused-vars
     const [scrollPosition, setScrollPosition] = useState(0);
     const handleScroll = () => {
@@ -28,26 +56,21 @@ const BNComponents = () => {
         smoke.style.display = 'none';
     }
 
+    const onNavigate = (path) => {
+        navigate(path, { replace: true });
+    }
 
     return (
         <div className="wrapp-bn-navigation">
             <div className="bn-navigation">
                 <ul>
-                    <li className="link">
-                        <NavLink to={"/"} className={({ isActive, isPending }) => isPending ? 'pending' : isActive ? 'bn-home bn-active' : "bn-home"} >
-                            <i className="ic-home"></i>
-                        </NavLink>
-                    </li>
-                    <li className="link">
-                        <NavLink to={"/about"} className={({ isActive, isPending }) => isPending ? 'pending' : isActive ? 'bn-about bn-active' : "bn-about"} >
-                            <i className="ic-home"></i>
-                        </NavLink>
-                    </li>
-                    <li className="link">
-                        <NavLink to={"/project"} className={({ isActive, isPending }) => isPending ? 'pending' : isActive ? 'bn-project bn-active' : "bn-project"} >
-                            <i className="ic-home"></i>
-                        </NavLink>
-                    </li>
+                    {menus.map(menu => (
+                        <li role="button" className="link" key={menu.id} onClick={() => onNavigate(menu.path)}>
+                            <button type="button" className={pathName === menu.path ? 'bn-active' + ' ' + menu.class : menu.class}>
+                                <i className={menu.icon}></i>
+                            </button>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className="to-the-top" onClick={() => scrolltoTop()}>

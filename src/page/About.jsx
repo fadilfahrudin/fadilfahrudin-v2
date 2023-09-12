@@ -1,18 +1,44 @@
 import { heroImg } from "../assets/img";
 import { CardExperience } from "../component/atomic";
+import onLoadData from "../utils/skeleton";
 
 const About = () => {
     return (
         <section className="about">
             {/* hero img */}
-            <div className="hero-img">
+            <div className="loading hero-img">
                 <img src={heroImg} alt="fadil Fahrudin" />
             </div>
 
             {/* about */}
             <div className="description">
                 <h3 className="title">Hay There! 👋</h3>
-                <p className="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, itaque. Asperiores voluptate molestias nemo reprehenderit, iure, hic inventore dolorum exercitationem eveniet, sunt veritatis? Accusantium eveniet labore fugit deleniti dignissimos placeat assumenda! Provident aspernatur repudiandae repellat dicta, tempore repellendus, aliquid, pariatur ab et deserunt dolores laudantium id debitis dolorum esse perferendis cumque! Voluptates a magni repellat hic iure veniam atque suscipit commodi. Repudiandae tenetur ut eius quia maiores illo hic facilis? Obcaecati, id autem placeat perferendis rerum harum ab laborum. Culpa, cum. Dolor provident dolore animi unde amet inventore aliquid fugiat at officia tenetur consectetur, odit quaerat facere eveniet in voluptas doloribus et consequuntur cumque molestiae, doloremque nihil aliquam ipsa magni? Unde velit molestiae, iusto, eos nemo harum ut alias praesentium laboriosam veniam necessitatibus? Deleniti error veritatis quae blanditiis reprehenderit consequatur a fugiat voluptate aliquam repudiandae. Cum, ex dicta necessitatibus perferendis consectetur cumque impedit excepturi quod soluta, illo debitis nobis in magni odit reprehenderit velit magnam similique voluptate consequuntur minima iusto accusantium quia rerum. Explicabo, laudantium eveniet ex itaque omnis vitae iusto corporis voluptates veniam dolorum delectus sed nemo id consectetur autem eius? Recusandae magnam sint fuga, architecto quisquam rerum, dicta eum quam labore harum fugiat ipsa velit, commodi beatae eaque.</p>
+                <article className="body-text">
+                    <p>
+                        I'am Fadillah Fahrudin, as UI design and Front-End Developer. Youth 25 years old born in Lampung. I graduated from Pamulang University majoring in Informatic of technic (2023).
+                    </p>
+
+                    <p>
+                        I have strong experience in using programming languages such as HTML, CSS, JavaScript, and a little basic PHP and I can also work with some frameworks that I am good at such as Bootstrap, React JS, React Native, and a little understanding of Laravel. I also understand the basic concepts of responsive design and interface design.
+                    </p>
+
+                    <p>
+                        First time I became interested in programming languages when I was in Junior High School and at that time I watched a movie titled Who Am I after this I was interested and wanted to be a hacker hehe.🤣 So I started to find out how to learn programming language when I was a bachelor's degree student at Pamulang University (2017) I chose major in informatics of technic and the first language that I knew was C++ until the fourth semester I found a YouTube channel Web Programming UNPAS that provides education regarding basic languages such as HTML CSS PHP and Javascript.
+                    </p>
+
+                    <p>
+                        First project was at that time creating a static web portfolio using HTML CSS and javascript. and while studying in 2022, for the first time I worked in the web developer section to build a social website the Gerakan Infaq Nutrisi, starting from UI design using Figma and then slicing to code HTML, CSS, and Javascript. At the time I build this website, I use the Laravel framework. But this project has not been resumed until now from my office.
+                    </p>
+                    <p>
+                        For my undergraduate finals, I created an Android-based crowdfunding app using React Native. Before that I didn't really understand React until I found a bootcamp class on Build with Angga regarding creating an Android Food Market application that uses React Native for mobile applications and Laravel as a Content Management System and I was able to complete this class.
+                    </p>
+
+                    <p>
+                        I find out about React, read about documents, and always try it in my simple project. and I continue my study case to make Android Application for my final undergraduate exams and about six months I finished this project.🦾⚔️
+                    </p>
+                    <p>
+                        And I like this framework.reactBase of Component | Learn once, write anywhere.</p>
+                </article>
             </div>
 
             {/* experience */}
@@ -20,10 +46,9 @@ const About = () => {
                 <h5>Work Experience</h5>
                 <hr />
                 <div className="wrapp-card-experience">
-                    <CardExperience />
-                    <CardExperience />
-                    <CardExperience />
-                    <CardExperience />
+                    <CardExperience job={"Junior Web Developer"} location={"Semangat Bantu"} duration={"Jan 2022 - Jan 2023"} />
+                    <CardExperience job={"Comunity Network"} location={"Semangat Bantu"} duration={"Jul 2021 - Dec 2022"} />
+                    <CardExperience job={"Designer"} location={"Laju Peduli"} duration={"Jun 2019 - Dec 2019"} />
                 </div>
             </div>
         </section>

@@ -1,6 +1,7 @@
 .project {
   @include media.desktop {
     width: 850px;
+    min-height: 75vh;
     margin: 0 auto;
     .wrapp-card-project {
       gap: 40px;

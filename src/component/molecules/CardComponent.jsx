@@ -1,9 +1,6 @@
-import { logoFigma } from "../../assets/img"
-import ToolsStack from "../atomic/Tools"
-
+// import onLoadData from "../../utils/skeleton"
 // eslint-disable-next-line react/prop-types
-const CardComponent = ({ backgroundColor, img, nameProject, idCard, imgWidth, imgHeight, left, bottom }) => {
-
+const CardComponent = ({ title, subtitle, backgroundColor, img, nameProject, idCard, imgWidth, imgHeight, left, bottom, link }) => {
     const stylesCard = {
         backgroundColor: backgroundColor,
     }
@@ -37,23 +34,20 @@ const CardComponent = ({ backgroundColor, img, nameProject, idCard, imgWidth, im
         imgProject.style.cursor = "default";
     }
 
-
     return (
-        <div className="card loading" style={stylesCard} id={idCard} onMouseOver={cardOver} onMouseLeave={cardOverLeave}>
+        <div className="loading card" style={stylesCard} id={idCard} onClick={link} onMouseOver={cardOver} onMouseLeave={cardOverLeave} >
             <div className="bg-hover"></div>
             <div className="main-card-title">
-                <h5>Lorem ipsum dolor sit amet</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, tempora Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit debitis earum vel. Et voluptas veniam ratione similique officiis beatae odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, perferendis!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, amet?</p>
+                <h5>{title}</h5>
+                <div className="card-sub">
+                    <p>{subtitle}</p>
+                </div>
                 <button type="button" className="wrapp-btn-circle" onMouseLeave={btnOverLeave} onMouseOver={btnOver}>
                     <i className="btn-arrowCircle"></i>
                     <i className="arrowicon">&rarr;</i>
                 </button>
             </div>
             <img src={img} className="img-project" alt={nameProject} width={imgWidth} height={imgHeight} style={styleImg} />
-            <div className="tools-stack-project">
-                <ToolsStack icon={logoFigma} nameIcon={'Figma'} height={30} width={30} />
-                <ToolsStack icon={logoFigma} nameIcon={'Figma'} height={30} width={30} />
-            </div>
         </div>
     )
 }
