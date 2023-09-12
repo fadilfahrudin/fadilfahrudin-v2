@@ -1,0 +1,210 @@
+.jumbotron {
+  display: flex;
+  @include media.xs {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    .jumbotron-text {
+      position: absolute;
+      bottom: 0;
+      padding: 0 14px;
+      .btn-resume {
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        color: $text-navy;
+        padding: 10px 30px;
+        font-size: 1rem;
+        font-weight: 400;
+        transition: all 0.2s linear;
+        cursor: alias;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 0px 2px #0a1e39;
+          font-weight: 500;
+          outline: #0a1e39 solid 2px;
+          color: #0a1e39;
+        }
+      }
+      .jumbotron-about {
+        font-size: 1rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 30px;
+        color: $text-dark;
+        text-align: center;
+      }
+    }
+    .jumbotron-hero {
+      position: absolute;
+      top: 0;
+      aspect-ratio: 1/1;
+      width: 50%;
+      height: 50%;
+    }
+  }
+  @include media.sm {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    .jumbotron-text {
+      position: absolute;
+      bottom: 0;
+      padding: 0 14px;
+      .btn-resume {
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        color: $text-navy;
+        padding: 10px 30px;
+        font-size: 1rem;
+        font-weight: 400;
+        transition: all 0.2s linear;
+        cursor: alias;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 0px 2px #0a1e39;
+          font-weight: 500;
+          outline: #0a1e39 solid 2px;
+          color: #0a1e39;
+        }
+      }
+      .jumbotron-about {
+        font-size: 1rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 30px;
+        color: $text-dark;
+        text-align: center;
+      }
+    }
+    .jumbotron-hero {
+      position: absolute;
+      top: 0;
+      aspect-ratio: 1/1;
+      width: 50%;
+      height: 50%;
+    }
+  }
+  @include media.md {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    .jumbotron-text {
+      .btn-resume {
+        border-radius: 5px;
+        margin-top: 20px;
+        color: $text-navy;
+        padding: 10px 30px;
+        font-size: 1rem;
+        font-weight: 400;
+        transition: all 0.2s linear;
+        cursor: alias;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 0px 2px #0a1e39;
+          font-weight: 500;
+          outline: #0a1e39 solid 2px;
+          color: #0a1e39;
+        }
+      }
+      .jumbotron-about {
+        font-size: 1rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 30px;
+        color: $text-dark;
+        text-align: start;
+      }
+    }
+    .jumbotron-hero {
+      aspect-ratio: 1/1;
+      width: 35%;
+      height: 35%;
+    }
+  }
+  @include media.lg {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    .jumbotron-text {
+      .btn-resume {
+        border-radius: 5px;
+        margin-top: 20px;
+        color: $text-navy;
+        padding: 10px 40px;
+        font-size: 1rem;
+        font-weight: 400;
+        transition: all 0.2s linear;
+        cursor: alias;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 0px 2px #0a1e39;
+          font-weight: 500;
+          outline: #0a1e39 solid 2px;
+          color: #0a1e39;
+        }
+      }
+      h5 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 34px;
+        color: $text-dark;
+      }
+    }
+    .jumbotron-hero {
+      aspect-ratio: 1/1;
+      width: 40%;
+      height: 40%;
+    }
+  }
+  @include media.xl {
+    flex-direction: row;
+    align-items: center;
+    gap: 52px;
+    min-height: 90vh;
+    .jumbotron-text {
+      .btn-resume {
+        width: 305px;
+        height: 57px;
+        border-radius: 5px;
+        margin-top: 20px;
+        color: $text-navy;
+        font-size: 2rem;
+        font-weight: 400;
+        transition: all 0.2s ease-in-out;
+        cursor: alias;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 0px 2px #0a1e39;
+          font-weight: 500;
+          outline: #0a1e39 solid 2px;
+          color: #0a1e39;
+        }
+      }
+      h5 {
+        font-size: 2rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 47px;
+        color: $text-dark;
+      }
+    }
+    .jumbotron-hero {
+      aspect-ratio: 1/1;
+    }
+  }
+}

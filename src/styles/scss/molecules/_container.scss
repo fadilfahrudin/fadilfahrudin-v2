@@ -1,8 +1,24 @@
-@include media.mobile {
+@include media.xs {
+  .container {
+    margin: 0 10px;
+  }
 }
-@include media.tablet {
+@include media.sm {
+  .container {
+    margin: 0 10px;
+  }
 }
-@include media.desktop {
+@include media.md {
+  .container {
+    margin: 0 50px;
+  }
+}
+@include media.lg {
+  .container {
+    margin: 0 50px;
+  }
+}
+@include media.xl {
   .container {
     margin: 0 80px;
   }

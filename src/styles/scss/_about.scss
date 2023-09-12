@@ -3,7 +3,7 @@
   padding: 10px 1%;
   width: 100%;
   overflow: hidden;
-  @include media.desktop {
+  @include media.xl {
     .hero-img {
       width: 300px;
       height: 300px;

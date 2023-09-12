@@ -4,11 +4,10 @@ const FooterComponent = () => {
     return (
         <footer>
             <div className="line-break"></div>
-            <div className="feedback">
+            <div className="footer-body">
                 <div className="contact">
                     <h5>Hay There 👋</h5>
-                    <p>Feel free to contact me if you want to collaborate or just be friendly.</p>
-                    <a href="/" className="email-link">fadilfahrudin32@gmail.com</a>
+                    <p>Feel free to contact me if you want to collaborate or just be friendly. <a href="/" className="email-link">fadilfahrudin32@gmail.com</a></p>
                 </div>
                 <div className="social-media-wrapp">
                     <a

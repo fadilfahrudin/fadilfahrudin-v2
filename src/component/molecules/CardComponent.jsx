@@ -1,13 +1,8 @@
 // import onLoadData from "../../utils/skeleton"
 // eslint-disable-next-line react/prop-types
-const CardComponent = ({ title, subtitle, backgroundColor, img, nameProject, idCard, imgWidth, imgHeight, left, bottom, link }) => {
+const CardComponent = ({ title, subtitle, backgroundColor, img, nameProject, idCard, imgWidth, imgHeight, link }) => {
     const stylesCard = {
         backgroundColor: backgroundColor,
-    }
-    const styleImg = {
-        position: "absolute",
-        left: left,
-        bottom: bottom,
     }
     const btnOver = () => {
         const bgHover = document.getElementsByClassName("bg-hover")[idCard];
@@ -47,7 +42,9 @@ const CardComponent = ({ title, subtitle, backgroundColor, img, nameProject, idC
                     <i className="arrowicon">&rarr;</i>
                 </button>
             </div>
-            <img src={img} className="img-project" alt={nameProject} width={imgWidth} height={imgHeight} style={styleImg} />
+            <div className="wrapp-img-project">
+                <img src={img} className="img-project" alt={nameProject} width={imgWidth} height={imgHeight} />
+            </div>
         </div>
     )
 }

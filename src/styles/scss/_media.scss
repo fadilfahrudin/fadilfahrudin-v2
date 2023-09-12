@@ -1,17 +1,29 @@
-@mixin mobile {
-  @media (max-width: 465px) {
+@mixin xs {
+  @media (max-width: 320px) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media (min-width: 768px) and (max-width: 1075px) {
+@mixin sm {
+  @media (min-width: 321px) and (max-width: 468px) {
     @content;
   }
 }
 
-@mixin desktop {
-  @media (min-width: 1076px) {
+@mixin md {
+  @media (min-width: 469px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 769px) and (max-width: 1076px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1077px) {
     @content;
   }
 }

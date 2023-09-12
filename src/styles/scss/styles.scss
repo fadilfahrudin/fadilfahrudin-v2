@@ -1,18 +1,21 @@
 @use "media";
 
 @import "variables";
-@import "main";
-@import "footer";
+@import "root";
 @import "about";
 @import "detail-project";
 
 // Molecules
 @import "./molecules/container";
-@import "./molecules/navbar";
-@import "./molecules/jumbotron";
+@import "./molecules/main-page";
 @import "./molecules/project-page";
 @import "./molecules/bottom-navigation";
 
 // Atomic
+@import "./atomic/navbar";
+@import "./atomic/jumbotron";
+@import "./atomic/tools";
+@import "./atomic/expartise";
+@import "./atomic/footer";
 @import "./atomic/project-card";
-@import "loading";
+@import "./atomic/loading";

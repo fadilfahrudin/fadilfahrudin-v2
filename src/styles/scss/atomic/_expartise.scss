@@ -1,0 +1,103 @@
+@include media.xs {
+  .expartise {
+    padding: 10px 0;
+    width: 100%;
+    h4 {
+      color: $text-dark;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      text-align: center;
+    }
+    .tools-stack {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@include media.sm {
+  .expartise {
+    padding: 10px 0;
+    width: 100%;
+    h4 {
+      color: $text-dark;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      text-align: center;
+    }
+    .tools-stack {
+      overflow: scroll;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@include media.md {
+  .expartise {
+    margin-top: 50px;
+    padding: 10px 0;
+    width: 100%;
+    h4 {
+      color: $text-dark;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      text-align: center;
+    }
+    .tools-stack {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@include media.lg {
+  .expartise {
+    margin-top: 50px;
+    padding: 10px 0;
+    width: 100%;
+    h4 {
+      color: $text-dark;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      text-align: center;
+    }
+    .tools-stack {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@include media.xl {
+  .expartise {
+    padding: 10px 0;
+    width: 100%;
+    h4 {
+      color: $text-dark;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      text-align: center;
+    }
+    .tools-stack {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
