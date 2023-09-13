@@ -28,6 +28,7 @@ const About = () => {
                         I'am <b> Fadillah Fahrudin, as UI design and Front-End Developer.</b> Youth 25 years old born in Lampung. I graduated from Pamulang University majoring in Informatic of technic (2023).
                     </p>
                     <img src={doc1} alt="fadil-fahrudin" className="img-about" width="100%" height="100%" />
+                    <figure>Me and my work</figure>
                     <p>
                         I have strong experience in using programming languages such as HTML, CSS, JavaScript, and a little basic PHP and I can also work with some frameworks that I am good at such as Bootstrap, React JS, React Native, and a little understanding of Laravel. I also understand the basic concepts of responsive design and interface design.
                     </p>
@@ -36,7 +37,9 @@ const About = () => {
                         First time I became interested in programming languages when I was in Junior High School and at that time I watched a movie titled Who Am I after this I was interested and wanted to be a hacker.😁 So I started to find out how to learn programming language when I was a bachelor's degree student at Pamulang University (2017) I chose major in informatics of technic and the first language that I knew was C++ until the fourth semester I found a YouTube channel <a href="https://www.youtube.com/@sandhikagalihWPU">Web Programming UNPAS</a> that provides education regarding basic languages such as HTML CSS PHP and Javascript.
                     </p>
                     <img src={doc3} alt="fadil-fahrudin" className="img-about" width="100%" height="100%" />
+                    <figure>Working on Semangat Bantu</figure>
                     <img src={doc2} alt="fadil-fahrudin" className="img-about" width="100%" height="100%" />
+                    <figure>Working on Laju Peduli</figure>
                     <p>
                         First project was at that time creating a static web portfolio using HTML CSS and javascript. and while studying in 2022, for the first time I worked in the web developer section to build a social website the Gerakan Infaq Nutrisi, starting from UI design using Figma and then slicing to code HTML, CSS, and Javascript. At the time I build this website, I use the Laravel framework. But this project has not been resumed until now from my office.
                     </p>
@@ -45,6 +48,7 @@ const About = () => {
                     </p>
 
                     <img src={doc4} alt="fadil-fahrudin" className="img-about" width="100%" height="100%" />
+                    <figure>The process of developing a donation application with React Native</figure>
                     <p>
                         I find out about React, read about documents, and always try it in my simple project. and I continue my study case to make Android Application for my final undergraduate exams and about six months I finished this project.
                     </p>
