@@ -1,12 +1,23 @@
 import { logoBehance, logoDribbble, logoGithub, logoIg, logoLinkedIn, logoYoutube } from "../../assets/img";
 
 const FooterComponent = () => {
+    const coffee = () => {
+        const coffeeClass = document.querySelector('.coffee');
+        coffeeClass.innerHTML = `
+        <iframe src="https://giphy.com/embed/1oKjCzdnatyyMxkdxF" width="200" height="200" frameBorder="0" className="coffee" allowFullScreen></iframe>
+        `
+
+        setTimeout(() => {
+            coffeeClass.innerHTML = ''
+        }, 4500);
+    }
+
     return (
         <footer>
             <div className="line-break"></div>
             <div className="footer-body">
                 <div className="contact">
-                    <h5>Hay There 👋</h5>
+                    <h5>Hi There 👋</h5>
                     <p>Feel free to contact me if you want to collaborate or just be friendly. <a href="/" className="email-link">fadilfahrudin32@gmail.com</a></p>
                 </div>
                 <div className="social-media-wrapp">
@@ -45,7 +56,8 @@ const FooterComponent = () => {
                     </a>
                 </div>
             </div>
-            <p className="license">© 2022 Made by Fadil Fahrudin with a cup of ☕</p>
+            <p className="license">© 2022 <b>Fadil Fahrudin</b> - Made with a cup of <span onMouseOver={() => coffee()} >☕</span></p>
+            <div className="coffee"></div>
         </footer>
     )
 }

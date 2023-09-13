@@ -22,8 +22,24 @@ import defaulBanner from './default-background-article.svg';
 import defaulUser from './user-profile-default.svg';
 import defaultLogo from './logo-project-default.svg';
 import logoGithub2 from './github-1.svg';
+import logoSass from './sass.svg';
+import logoMnc from './mnc.webp';
+import logoSb from './logo-sb2.png';
+import logoLaju from './laju.png';
+import doc1 from "./doc-1.png";
+import doc2 from "./doc-2.jpg";
+import doc3 from "./doc-3.jpg";
+import doc4 from './app-sb.jpg'
 
 export {
+    doc1,
+    doc2,
+    doc3,
+    doc4,
+    logoLaju,
+    logoMnc,
+    logoSb,
+    logoSass,
     logoGithub2,
     logoRn,
     defaulBanner,

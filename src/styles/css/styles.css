@@ -1364,6 +1364,7 @@
   }
   .about-page .description .body-text {
     margin-top: 20px;
+    text-align: center;
   }
   .about-page .description .body-text p {
     color: #292828;
@@ -1379,6 +1380,13 @@
     font-style: italic;
     font-weight: 500;
   }
+  .about-page .description .body-text .img-about {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+    margin: 5px;
+  }
   .about-page .experience h5 {
     text-align: center;
     color: #292828;
@@ -1391,6 +1399,19 @@
     height: 2px;
     width: 50%;
     margin: 0 auto;
+  }
+  .about-page .experience .company-identity {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  .about-page .experience .company-identity .company-logo {
+    width: auto;
+    height: 50px;
   }
   .about-page .experience .wrapp-card-experience {
     margin: 0 auto;
@@ -1453,6 +1474,7 @@
   }
   .about-page .description .body-text {
     margin-top: 20px;
+    text-align: center;
   }
   .about-page .description .body-text p {
     color: #292828;
@@ -1468,6 +1490,13 @@
     font-style: italic;
     font-weight: 500;
   }
+  .about-page .description .body-text .img-about {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+    margin: 5px;
+  }
   .about-page .experience h5 {
     text-align: center;
     color: #292828;
@@ -1480,6 +1509,19 @@
     height: 2px;
     width: 50%;
     margin: 0 auto;
+  }
+  .about-page .experience .company-identity {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  .about-page .experience .company-identity .company-logo {
+    width: auto;
+    height: 50px;
   }
   .about-page .experience .wrapp-card-experience {
     margin: 0 auto;
@@ -1542,6 +1584,7 @@
   }
   .about-page .description .body-text {
     margin-top: 20px;
+    text-align: center;
   }
   .about-page .description .body-text p {
     color: #292828;
@@ -1557,6 +1600,13 @@
     font-style: italic;
     font-weight: 500;
   }
+  .about-page .description .body-text .img-about {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+    margin: 5px;
+  }
   .about-page .experience h5 {
     text-align: center;
     color: #292828;
@@ -1569,6 +1619,19 @@
     height: 2px;
     width: 30%;
     margin: 0 auto;
+  }
+  .about-page .experience .company-identity {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  .about-page .experience .company-identity .company-logo {
+    width: auto;
+    height: 50px;
   }
   .about-page .experience .wrapp-card-experience {
     margin-top: 20px;
@@ -1629,6 +1692,7 @@
   }
   .about-page .description .body-text {
     margin-top: 20px;
+    text-align: center;
   }
   .about-page .description .body-text p {
     color: #292828;
@@ -1644,6 +1708,13 @@
     font-style: italic;
     font-weight: 500;
   }
+  .about-page .description .body-text .img-about {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+    margin: 5px;
+  }
   .about-page .experience h5 {
     text-align: center;
     color: #292828;
@@ -1656,6 +1727,19 @@
     height: 2px;
     width: 30%;
     margin: 0 auto;
+  }
+  .about-page .experience .company-identity {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  .about-page .experience .company-identity .company-logo {
+    width: auto;
+    height: 50px;
   }
   .about-page .experience .wrapp-card-experience {
     margin-top: 20px;
@@ -1716,6 +1800,7 @@
   .about-page .description .body-text {
     margin: 0 10%;
     margin-bottom: 50px;
+    text-align: center;
   }
   .about-page .description .body-text p {
     color: #292828;
@@ -1731,6 +1816,13 @@
     font-style: italic;
     font-weight: 500;
   }
+  .about-page .description .body-text .img-about {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+    margin: 5px;
+  }
   .about-page .experience h5 {
     text-align: center;
     color: #292828;
@@ -1744,6 +1836,19 @@
     width: 10%;
     margin: 0 auto;
   }
+  .about-page .experience .company-identity {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  .about-page .experience .company-identity .company-logo {
+    width: auto;
+    height: 50px;
+  }
   .about-page .experience .wrapp-card-experience {
     scroll-behavior: smooth;
     margin: 0 auto;
@@ -1751,12 +1856,12 @@
     width: 80%;
     gap: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     padding: 10px 10px;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .about-page .experience .swipe-wrapp {
-    display: none;
+    display: flex;
     justify-content: center;
     width: 100%;
     gap: 10px;
@@ -3222,6 +3327,9 @@
     line-height: 30px;
     font-size: 12px;
   }
+  footer .coffee {
+    display: none;
+  }
 }
 @media (min-width: 321px) and (max-width: 468px) {
   footer {
@@ -3289,6 +3397,9 @@
     line-height: 30px;
     font-size: 12px;
   }
+  footer .coffee {
+    display: none;
+  }
 }
 @media (min-width: 469px) and (max-width: 768px) {
   footer {
@@ -3349,6 +3460,9 @@
   footer .license {
     text-align: center;
     line-height: 30px;
+  }
+  footer .coffee {
+    display: none;
   }
 }
 @media (min-width: 769px) and (max-width: 1076px) {
@@ -3411,9 +3525,13 @@
     text-align: center;
     line-height: 30px;
   }
+  footer .coffee {
+    display: none;
+  }
 }
 @media (min-width: 1077px) {
   footer {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -3472,6 +3590,14 @@
   footer .license {
     text-align: center;
     line-height: 30px;
+  }
+  footer .license span {
+    cursor: context-menu;
+  }
+  footer .coffee {
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
   }
 }
 .card-project {

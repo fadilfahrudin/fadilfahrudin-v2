@@ -65,6 +65,9 @@
       line-height: 30px;
       font-size: 12px;
     }
+    .coffee {
+      display: none;
+    }
   }
 }
 
@@ -136,6 +139,9 @@
       line-height: 30px;
       font-size: 12px;
     }
+    .coffee {
+      display: none;
+    }
   }
 }
 @include media.md {
@@ -198,6 +204,9 @@
     .license {
       text-align: center;
       line-height: 30px;
+    }
+    .coffee {
+      display: none;
     }
   }
 }
@@ -263,11 +272,15 @@
       text-align: center;
       line-height: 30px;
     }
+    .coffee {
+      display: none;
+    }
   }
 }
 
 @include media.xl {
   footer {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -327,6 +340,14 @@
     .license {
       text-align: center;
       line-height: 30px;
+      span {
+        cursor: context-menu;
+      }
+    }
+    .coffee {
+      position: absolute;
+      bottom: 50px;
+      right: 200px;
     }
   }
 }
