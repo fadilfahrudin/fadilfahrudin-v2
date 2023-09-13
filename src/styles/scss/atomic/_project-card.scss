@@ -1,20 +1,295 @@
 .card-project {
-  width: 405px;
-  height: 234px;
-  background-color: #fff;
-  color: #0a1e39;
+  background-color: $bg-white;
+  color: $text-navy;
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 28px 15px;
-  gap: 14px;
-
   transition: 0.2s ease-in;
-  border-radius: 20px;
   border: 0;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.274);
 
+  @include media.xs {
+    width: 100%;
+    height: 164px;
+    padding: 8px 15px;
+    gap: 4px;
+    border-radius: 5px;
+    .main-card {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      gap: 2px;
+      overflow: hidden;
+      .header-card {
+        font-size: 1.15rem;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        min-height: 30px;
+      }
+      .body-text-card {
+        height: 55px;
+        overflow: hidden;
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .more-details {
+          text-decoration: none;
+          margin: 2px 0;
+          font-size: 12px;
+          &:hover {
+            text-decoration: underline;
+            color: #0a1e39;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .teach-stack {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+      .teach-stack::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .brand-project {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @include media.sm {
+    width: 100%;
+    height: 186px;
+    padding: 8px 15px;
+    gap: 4px;
+    border-radius: 5px;
+    .main-card {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      gap: 2px;
+      overflow: hidden;
+      .header-card {
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        min-height: 30px;
+      }
+      .body-text-card {
+        height: 55px;
+        overflow: hidden;
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .more-details {
+          text-decoration: none;
+          margin: 2px 0;
+          font-size: 12px;
+          &:hover {
+            text-decoration: underline;
+            color: #0a1e39;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .teach-stack {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+      .teach-stack::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .brand-project {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @include media.md {
+    min-width: 48%;
+    height: 186px;
+    padding: 8px 15px;
+    gap: 4px;
+    border-radius: 5px;
+    .main-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 2px;
+      overflow: hidden;
+      .header-card {
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        min-height: 30px;
+      }
+      .body-text-card {
+        height: 55px;
+        overflow: hidden;
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .more-details {
+          text-decoration: none;
+          margin: 2px 0;
+          font-size: 12px;
+          &:hover {
+            text-decoration: underline;
+            color: #0a1e39;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .teach-stack {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+      .teach-stack::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .brand-project {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @include media.lg {
+    width: 48%;
+    height: 220px;
+    padding: 8px 15px;
+    gap: 20px;
+    border-radius: 5px;
+    .main-card {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      gap: 4px;
+      overflow: hidden;
+      .header-card {
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        min-height: 30px;
+      }
+      .body-text-card {
+        height: 74px;
+        overflow: hidden;
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .more-details {
+          text-decoration: none;
+          margin: 2px 0;
+          font-size: 12px;
+          &:hover {
+            text-decoration: underline;
+            color: #0a1e39;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .teach-stack {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+      .teach-stack::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .brand-project {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+  }
+
   @include media.xl {
+    width: 405px;
+    height: 234px;
+    padding: 28px 15px;
+    gap: 14px;
+    border-radius: 20px;
     .main-card {
       display: flex;
       flex-direction: column;

@@ -1,4 +1,46 @@
 .project {
+  @include media.xs {
+    width: 100%;
+    min-height: 75vh;
+    margin-top: 20px;
+    .wrapp-card-project {
+      gap: 40px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  @include media.sm {
+    width: 100%;
+    min-height: 75vh;
+    margin-top: 20px;
+    .wrapp-card-project {
+      gap: 40px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  @include media.md {
+    width: 100%;
+    min-height: 75vh;
+    margin-top: 20px;
+    .wrapp-card-project {
+      gap: 35px 2%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  @include media.lg {
+    width: 100%;
+    min-height: 75vh;
+    margin-top: 20px;
+    .wrapp-card-project {
+      gap: 35px 4%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
   @include media.xl {
     width: 850px;
     min-height: 75vh;
