@@ -5,6 +5,7 @@ import ScrollToTop from "../utils/scrollToTop";
 
 
 const AppRoutes = () => {
+
     return (
         <div id="app-route" className="container">
             {/* Navbar */}

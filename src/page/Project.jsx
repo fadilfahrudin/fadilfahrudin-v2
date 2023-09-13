@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 import { CardProject } from "../component/molecules";
 import APIconfig from "../config/APIConfig"
 import onLoadData from "../utils/skeleton";
+import useDocumentTitle from "../utils/changeTitle";
 
 const Project = () => {
-
+    useDocumentTitle("Fadil Fahruddin | Project")
     const [articles, setArticles] = useState([])
 
     useEffect(() => {

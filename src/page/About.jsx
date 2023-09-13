@@ -3,9 +3,11 @@ import { doc1, doc2, doc3, doc4, heroImg, logoLaju, logoMnc, logoSb } from "../a
 import { CardExperience } from "../component/atomic";
 import onLoadData from "../utils/skeleton";
 import dbStatic from "../config/dbStatic";
+import useDocumentTitle from "../utils/changeTitle";
 
 
 const About = () => {
+    useDocumentTitle("Fadil Fahruddin | About");
     const experiences = dbStatic.find(({ dbName }) => dbName === "experiences")
 
     const ref = useRef(null)
