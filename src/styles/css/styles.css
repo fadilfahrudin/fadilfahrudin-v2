@@ -34,115 +34,6 @@
   border: 1px solid #0a1e39;
 }
 
-.about {
-  display: inline-block;
-  padding: 10px 1%;
-  width: 100%;
-  overflow: hidden;
-}
-@media (min-width: 1077px) {
-  .about .hero-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
-  .about .hero-img img {
-    width: 100%;
-    height: 100%;
-  }
-  .about .description .title {
-    text-align: center;
-    color: #000;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 100px; /* 50% */
-  }
-  .about .description .body-text {
-    margin: 0 10%;
-    margin-bottom: 50px;
-  }
-  .about .description .body-text p {
-    color: #292828;
-    text-align: justify;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 32px; /* 171.429% */
-    margin-top: 32px;
-  }
-  .about .experience h5 {
-    text-align: center;
-    color: #292828;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 50px; /* 50% */
-  }
-  .about .experience hr {
-    background-color: #292828;
-    height: 2px;
-    width: 10%;
-    margin: 0 auto;
-  }
-  .about .experience .wrapp-card-experience {
-    margin: 0 auto;
-    margin-top: 20px;
-    width: max-content;
-    display: flex;
-    padding: 10px 0;
-    overflow-x: scroll;
-  }
-  .about .experience .wrapp-card-experience .card-experience {
-    cursor: alias;
-    min-width: 358.5px;
-    margin: 10px;
-    height: 189px;
-    padding: 14px;
-    background-color: #fff;
-    font-weight: bold;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.274);
-    overflow: hidden;
-    transition: all 0.2s ease-in-out;
-    border-radius: 5px;
-  }
-  .about .experience .wrapp-card-experience .card-experience .job-name,
-  .about .experience .wrapp-card-experience .card-experience .job-location,
-  .about .experience .wrapp-card-experience .card-experience .job-duration {
-    color: #0a1e39;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin: 5px 0;
-  }
-  .about .experience .wrapp-card-experience .card-experience .job-name img,
-  .about .experience .wrapp-card-experience .card-experience .job-location img,
-  .about .experience .wrapp-card-experience .card-experience .job-duration img {
-    width: 45px;
-    height: 45px;
-  }
-  .about .experience .wrapp-card-experience .card-experience .job-location,
-  .about .experience .wrapp-card-experience .card-experience .job-duration {
-    font-weight: 400;
-  }
-  .about .experience .wrapp-card-experience .card-experience .job-duration {
-    font-style: italic;
-    text-decoration: underline;
-  }
-  .about .experience .wrapp-card-experience .card-experience:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 5px 0px 2px #0a1e39;
-    outline: #0a1e39 solid 2px;
-  }
-  .about .experience .wrapp-card-experience::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 @media (min-width: 1077px) {
   .detail-page {
     width: 70%;
@@ -264,13 +155,13 @@
   }
 }
 @media (max-width: 320px) {
-  main .main-project {
+  .main-app .main-project {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  main .main-project h4 {
+  .main-app .main-project h4 {
     color: #292828;
     font-family: Inter;
     font-size: 25px;
@@ -278,7 +169,7 @@
     line-height: 48px;
     text-align: center;
   }
-  main .main-project .card-wrapp {
+  .main-app .main-project .card-wrapp {
     position: relative;
     width: 100%;
     display: flex;
@@ -286,27 +177,27 @@
     flex-wrap: wrap;
     gap: 50px 0;
   }
-  main .main-project .card-wrapp .card {
+  .main-app .main-project .card-wrapp .card {
     width: 95%;
     height: 380px;
     position: relative;
     overflow-y: hidden;
     cursor: pointer;
   }
-  main .main-project .card-wrapp .card .bg-hover {
+  .main-app .main-project .card-wrapp .card .bg-hover {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: all 0.5s ease-in-out;
   }
-  main .main-project .card-wrapp .card .main-card-title {
+  .main-app .main-project .card-wrapp .card .main-card-title {
     padding: 0 20px;
     padding-top: 20px;
     height: 260px;
     position: relative;
     overflow: hidden;
   }
-  main .main-project .card-wrapp .card .main-card-title h5 {
+  .main-app .main-project .card-wrapp .card .main-card-title h5 {
     font-size: 1rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -316,12 +207,12 @@
     margin-bottom: 10px;
     color: #292828;
   }
-  main .main-project .card-wrapp .card .main-card-title .card-sub {
+  .main-app .main-project .card-wrapp .card .main-card-title .card-sub {
     height: 50px;
     width: 100%;
     margin-bottom: unset;
   }
-  main .main-project .card-wrapp .card .main-card-title .card-sub p {
+  .main-app .main-project .card-wrapp .card .main-card-title .card-sub p {
     font-size: 0.78rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -331,7 +222,7 @@
     font-weight: normal;
     line-height: 140%;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -340,7 +231,7 @@
     align-items: center;
     position: relative;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -348,10 +239,10 @@
     border-radius: 50%;
     animation: btnArrowCircleClosed 0.5s linear forwards;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle:hover {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle:hover {
     animation: btnArrowCircle 0.5s linear forwards;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
     font-size: 20px;
     transition: all 0.5s linear;
@@ -376,13 +267,13 @@
       border: 1px solid #fff;
     }
   }
-  main .main-project .card-wrapp .card .wrapp-img-project {
+  .main-app .main-project .card-wrapp .card .wrapp-img-project {
     position: absolute;
     top: 36%;
     width: 100%;
     height: 60%;
   }
-  main .main-project .card-wrapp .card .wrapp-img-project .img-project {
+  .main-app .main-project .card-wrapp .card .wrapp-img-project .img-project {
     max-width: 100%;
     position: absolute;
     height: auto;
@@ -394,7 +285,7 @@
     margin: auto;
     transition: 0.5s ease-in-out;
   }
-  main .main-project .more-project-btn {
+  .main-app .main-project .more-project-btn {
     width: 100%;
     height: 50px;
     display: block;
@@ -406,7 +297,7 @@
     cursor: pointer;
     transition: all 0.25s ease-in-out;
   }
-  main .main-project .more-project-btn:hover {
+  .main-app .main-project .more-project-btn:hover {
     font-weight: 700;
     color: #0a1e39;
     transform: translateY(-5px);
@@ -415,13 +306,13 @@
   }
 }
 @media (min-width: 321px) and (max-width: 468px) {
-  main .main-project {
+  .main-app .main-project {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  main .main-project h4 {
+  .main-app .main-project h4 {
     color: #292828;
     font-family: Inter;
     font-size: 35px;
@@ -429,7 +320,7 @@
     line-height: 48px;
     text-align: center;
   }
-  main .main-project .card-wrapp {
+  .main-app .main-project .card-wrapp {
     position: relative;
     width: 100%;
     display: flex;
@@ -437,27 +328,27 @@
     flex-wrap: wrap;
     gap: 50px 0;
   }
-  main .main-project .card-wrapp .card {
+  .main-app .main-project .card-wrapp .card {
     width: 90%;
     height: 480px;
     position: relative;
     overflow-y: hidden;
     cursor: pointer;
   }
-  main .main-project .card-wrapp .card .bg-hover {
+  .main-app .main-project .card-wrapp .card .bg-hover {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: all 0.5s ease-in-out;
   }
-  main .main-project .card-wrapp .card .main-card-title {
+  .main-app .main-project .card-wrapp .card .main-card-title {
     padding: 0 50px;
     padding-top: 50px;
     height: 260px;
     position: relative;
     overflow: hidden;
   }
-  main .main-project .card-wrapp .card .main-card-title h5 {
+  .main-app .main-project .card-wrapp .card .main-card-title h5 {
     font-size: 1.75rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -467,12 +358,12 @@
     margin-bottom: 10px;
     color: #292828;
   }
-  main .main-project .card-wrapp .card .main-card-title .card-sub {
+  .main-app .main-project .card-wrapp .card .main-card-title .card-sub {
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
   }
-  main .main-project .card-wrapp .card .main-card-title .card-sub p {
+  .main-app .main-project .card-wrapp .card .main-card-title .card-sub p {
     font-size: 1rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -482,7 +373,7 @@
     font-weight: normal;
     line-height: 140%;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -491,7 +382,7 @@
     align-items: center;
     position: relative;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -499,10 +390,10 @@
     border-radius: 50%;
     animation: btnArrowCircleClosed 0.5s linear forwards;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle:hover {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle:hover {
     animation: btnArrowCircle 0.5s linear forwards;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
     font-size: 20px;
     transition: all 0.5s linear;
@@ -527,13 +418,13 @@
       border: 1px solid #fff;
     }
   }
-  main .main-project .card-wrapp .card .wrapp-img-project {
+  .main-app .main-project .card-wrapp .card .wrapp-img-project {
     position: absolute;
     top: 36%;
     width: 100%;
     height: 60%;
   }
-  main .main-project .card-wrapp .card .wrapp-img-project .img-project {
+  .main-app .main-project .card-wrapp .card .wrapp-img-project .img-project {
     max-width: 100%;
     position: absolute;
     height: auto;
@@ -545,7 +436,7 @@
     margin: auto;
     transition: 0.5s ease-in-out;
   }
-  main .main-project .more-project-btn {
+  .main-app .main-project .more-project-btn {
     width: 100%;
     height: 50px;
     display: block;
@@ -557,7 +448,7 @@
     cursor: pointer;
     transition: all 0.25s ease-in-out;
   }
-  main .main-project .more-project-btn:hover {
+  .main-app .main-project .more-project-btn:hover {
     font-weight: 700;
     color: #0a1e39;
     transform: translateY(-5px);
@@ -566,13 +457,13 @@
   }
 }
 @media (min-width: 469px) and (max-width: 768px) {
-  main .main-project {
+  .main-app .main-project {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  main .main-project h4 {
+  .main-app .main-project h4 {
     color: #292828;
     font-family: Inter;
     font-size: 35px;
@@ -580,7 +471,7 @@
     line-height: 48px;
     text-align: center;
   }
-  main .main-project .card-wrapp {
+  .main-app .main-project .card-wrapp {
     position: relative;
     width: 100%;
     display: flex;
@@ -588,27 +479,27 @@
     flex-wrap: wrap;
     gap: 50px 0;
   }
-  main .main-project .card-wrapp .card {
+  .main-app .main-project .card-wrapp .card {
     width: 80%;
     height: 580px;
     position: relative;
     overflow-y: hidden;
     cursor: pointer;
   }
-  main .main-project .card-wrapp .card .bg-hover {
+  .main-app .main-project .card-wrapp .card .bg-hover {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: all 0.5s ease-in-out;
   }
-  main .main-project .card-wrapp .card .main-card-title {
+  .main-app .main-project .card-wrapp .card .main-card-title {
     padding: 0 50px;
     padding-top: 50px;
     height: 260px;
     position: relative;
     overflow: hidden;
   }
-  main .main-project .card-wrapp .card .main-card-title h5 {
+  .main-app .main-project .card-wrapp .card .main-card-title h5 {
     font-size: 1.75rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -618,12 +509,12 @@
     margin-bottom: 10px;
     color: #292828;
   }
-  main .main-project .card-wrapp .card .main-card-title .card-sub {
+  .main-app .main-project .card-wrapp .card .main-card-title .card-sub {
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
   }
-  main .main-project .card-wrapp .card .main-card-title .card-sub p {
+  .main-app .main-project .card-wrapp .card .main-card-title .card-sub p {
     font-size: 1rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -633,7 +524,7 @@
     font-weight: normal;
     line-height: 140%;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -642,7 +533,7 @@
     align-items: center;
     position: relative;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -650,10 +541,10 @@
     border-radius: 50%;
     animation: btnArrowCircleClosed 0.5s linear forwards;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle:hover {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle:hover {
     animation: btnArrowCircle 0.5s linear forwards;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
     font-size: 20px;
     transition: all 0.5s linear;
@@ -678,13 +569,13 @@
       border: 1px solid #fff;
     }
   }
-  main .main-project .card-wrapp .card .wrapp-img-project {
+  .main-app .main-project .card-wrapp .card .wrapp-img-project {
     position: absolute;
     top: 36%;
     width: 100%;
     height: 60%;
   }
-  main .main-project .card-wrapp .card .wrapp-img-project .img-project {
+  .main-app .main-project .card-wrapp .card .wrapp-img-project .img-project {
     max-width: 100%;
     position: absolute;
     height: auto;
@@ -696,7 +587,7 @@
     margin: auto;
     transition: 0.5s ease-in-out;
   }
-  main .main-project .more-project-btn {
+  .main-app .main-project .more-project-btn {
     width: 100%;
     height: 50px;
     display: block;
@@ -708,7 +599,7 @@
     cursor: pointer;
     transition: all 0.25s ease-in-out;
   }
-  main .main-project .more-project-btn:hover {
+  .main-app .main-project .more-project-btn:hover {
     font-weight: 700;
     color: #0a1e39;
     transform: translateY(-5px);
@@ -717,13 +608,13 @@
   }
 }
 @media (min-width: 769px) and (max-width: 1076px) {
-  main .main-project {
+  .main-app .main-project {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  main .main-project h4 {
+  .main-app .main-project h4 {
     color: #292828;
     font-family: Inter;
     font-size: 35px;
@@ -731,7 +622,7 @@
     line-height: 48px;
     text-align: center;
   }
-  main .main-project .card-wrapp {
+  .main-app .main-project .card-wrapp {
     position: relative;
     width: 100%;
     display: flex;
@@ -739,27 +630,27 @@
     flex-wrap: wrap;
     gap: 25px 2%;
   }
-  main .main-project .card-wrapp .card {
+  .main-app .main-project .card-wrapp .card {
     width: 48%;
     height: 450px;
     position: relative;
     overflow-y: hidden;
     cursor: pointer;
   }
-  main .main-project .card-wrapp .card .bg-hover {
+  .main-app .main-project .card-wrapp .card .bg-hover {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: all 0.5s ease-in-out;
   }
-  main .main-project .card-wrapp .card .main-card-title {
+  .main-app .main-project .card-wrapp .card .main-card-title {
     padding: 0 50px;
     padding-top: 50px;
     height: 260px;
     position: relative;
     overflow: hidden;
   }
-  main .main-project .card-wrapp .card .main-card-title h5 {
+  .main-app .main-project .card-wrapp .card .main-card-title h5 {
     font-size: 1.75rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -769,12 +660,12 @@
     color: #292828;
     margin-bottom: 10px;
   }
-  main .main-project .card-wrapp .card .main-card-title .card-sub {
+  .main-app .main-project .card-wrapp .card .main-card-title .card-sub {
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
   }
-  main .main-project .card-wrapp .card .main-card-title .card-sub p {
+  .main-app .main-project .card-wrapp .card .main-card-title .card-sub p {
     font-size: 1rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -784,7 +675,7 @@
     font-weight: normal;
     line-height: 140%;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle {
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -793,7 +684,7 @@
     align-items: center;
     position: relative;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -801,10 +692,10 @@
     border-radius: 50%;
     animation: btnArrowCircleClosed 0.5s linear forwards;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle:hover {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .btn-arrowCircle:hover {
     animation: btnArrowCircle 0.5s linear forwards;
   }
-  main .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
+  .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
     font-size: 20px;
     transition: all 0.5s linear;
@@ -829,13 +720,13 @@
       border: 1px solid #fff;
     }
   }
-  main .main-project .card-wrapp .card .wrapp-img-project {
+  .main-app .main-project .card-wrapp .card .wrapp-img-project {
     position: absolute;
     top: 40%;
     width: 100%;
     height: 60%;
   }
-  main .main-project .card-wrapp .card .wrapp-img-project .img-project {
+  .main-app .main-project .card-wrapp .card .wrapp-img-project .img-project {
     width: 60%;
     position: absolute;
     height: auto;
@@ -847,7 +738,7 @@
     margin: auto;
     transition: 0.5s ease-in-out;
   }
-  main .main-project .more-project-btn {
+  .main-app .main-project .more-project-btn {
     width: 100%;
     height: 50px;
     display: block;
@@ -859,7 +750,7 @@
     cursor: pointer;
     transition: all 0.25s ease-in-out;
   }
-  main .main-project .more-project-btn:hover {
+  .main-app .main-project .more-project-btn:hover {
     font-weight: 700;
     color: #0a1e39;
     transform: translateY(-5px);
@@ -1080,6 +971,452 @@
     gap: 40px;
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.about-page {
+  width: 100%;
+}
+@media (max-width: 320px) {
+  .about-page .hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-page .hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-page .description .title {
+    text-align: center;
+    color: #292828;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 34px; /* 50% */
+    margin-top: 20px;
+  }
+  .about-page .description .body-text {
+    margin-top: 20px;
+  }
+  .about-page .description .body-text p {
+    color: #292828;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 27px; /* 171.429% */
+    margin-bottom: 34px;
+  }
+  .about-page .description .body-text p a {
+    text-decoration: underline;
+    color: #0a1e39;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .about-page .experience h5 {
+    text-align: center;
+    color: #292828;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 50px; /* 50% */
+  }
+  .about-page .experience hr {
+    background-color: #0a1e39;
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .about-page .experience .wrapp-card-experience {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-page .experience .swipe-wrapp {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe {
+    color: #0a1e39;
+    border: none;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0px 6px 8px -3px rgba(10, 30, 57, 0.3960784314);
+    transition: all 0.2s ease-in-out;
+    padding: 5px 10px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:focus {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+}
+@media (min-width: 321px) and (max-width: 468px) {
+  .about-page .hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-page .hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-page .description .title {
+    text-align: center;
+    color: #292828;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 34px; /* 50% */
+    margin-top: 20px;
+  }
+  .about-page .description .body-text {
+    margin-top: 20px;
+  }
+  .about-page .description .body-text p {
+    color: #292828;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 27px; /* 171.429% */
+    margin-bottom: 34px;
+  }
+  .about-page .description .body-text p a {
+    text-decoration: underline;
+    color: #0a1e39;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .about-page .experience h5 {
+    text-align: center;
+    color: #292828;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 50px; /* 50% */
+  }
+  .about-page .experience hr {
+    background-color: #0a1e39;
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .about-page .experience .wrapp-card-experience {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-page .experience .swipe-wrapp {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe {
+    color: #0a1e39;
+    border: none;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0px 6px 8px -3px rgba(10, 30, 57, 0.3960784314);
+    transition: all 0.2s ease-in-out;
+    padding: 5px 10px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:focus {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+}
+@media (min-width: 469px) and (max-width: 768px) {
+  .about-page .hero-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-page .hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-page .description .title {
+    text-align: center;
+    color: #292828;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 34px; /* 50% */
+    margin-top: 20px;
+  }
+  .about-page .description .body-text {
+    margin-top: 20px;
+  }
+  .about-page .description .body-text p {
+    color: #292828;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 34px; /* 171.429% */
+    margin-bottom: 34px;
+  }
+  .about-page .description .body-text p a {
+    text-decoration: underline;
+    color: #0a1e39;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .about-page .experience h5 {
+    text-align: center;
+    color: #292828;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 50px; /* 50% */
+  }
+  .about-page .experience hr {
+    background-color: #0a1e39;
+    height: 2px;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .about-page .experience .wrapp-card-experience {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px 2%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  .about-page .experience .swipe-wrapp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe {
+    color: #0a1e39;
+    border: none;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0px 6px 8px -3px rgba(10, 30, 57, 0.3960784314);
+    transition: all 0.2s ease-in-out;
+    padding: 5px 10px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:focus {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1076px) {
+  .about-page .hero-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-page .hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-page .description .title {
+    text-align: center;
+    color: #292828;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 34px; /* 50% */
+    margin-top: 20px;
+  }
+  .about-page .description .body-text {
+    margin-top: 20px;
+  }
+  .about-page .description .body-text p {
+    color: #292828;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 34px; /* 171.429% */
+    margin-bottom: 34px;
+  }
+  .about-page .description .body-text p a {
+    text-decoration: underline;
+    color: #0a1e39;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .about-page .experience h5 {
+    text-align: center;
+    color: #292828;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 50px; /* 50% */
+  }
+  .about-page .experience hr {
+    background-color: #0a1e39;
+    height: 2px;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .about-page .experience .wrapp-card-experience {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px 2%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  .about-page .experience .swipe-wrapp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe {
+    color: #0a1e39;
+    border: none;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0px 6px 8px -3px rgba(10, 30, 57, 0.3960784314);
+    transition: all 0.2s ease-in-out;
+    padding: 5px 10px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:focus {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+}
+@media (min-width: 1077px) {
+  .about-page .hero-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-page .hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-page .description .title {
+    text-align: center;
+    color: #292828;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 100px; /* 50% */
+  }
+  .about-page .description .body-text {
+    margin: 0 10%;
+    margin-bottom: 50px;
+  }
+  .about-page .description .body-text p {
+    color: #292828;
+    text-align: justify;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 32px; /* 171.429% */
+    margin-top: 32px;
+  }
+  .about-page .description .body-text p a {
+    text-decoration: underline;
+    color: #0a1e39;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .about-page .experience h5 {
+    text-align: center;
+    color: #292828;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 50px; /* 50% */
+  }
+  .about-page .experience hr {
+    background-color: #0a1e39;
+    height: 2px;
+    width: 10%;
+    margin: 0 auto;
+  }
+  .about-page .experience .wrapp-card-experience {
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    overflow-x: scroll;
+  }
+  .about-page .experience .swipe-wrapp {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe {
+    color: #0a1e39;
+    border: none;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0px 6px 8px -3px rgba(10, 30, 57, 0.3960784314);
+    transition: all 0.2s ease-in-out;
+    padding: 5px 10px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+  .about-page .experience .swipe-wrapp .btn-swipe:focus {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 0px 1px #0a1e39;
+    outline: #0a1e39 solid 2px;
   }
 }
 
@@ -3124,6 +3461,184 @@
   transform: translateY(-5px);
   box-shadow: 0px 5px 0px 2px #0a1e39;
   outline: #0a1e39 solid 2px;
+}
+
+.card-experience {
+  cursor: alias;
+  background-color: #fff;
+  font-weight: 500;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.274);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.card-experience:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 0px 2px #0a1e39;
+  outline: #0a1e39 solid 2px;
+}
+@media (max-width: 320px) {
+  .card-experience {
+    width: 100%;
+    height: 159px;
+    padding: 0 12px;
+    border-radius: 5px;
+  }
+  .card-experience .job-name,
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    color: #0a1e39;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .card-experience .job-name img,
+  .card-experience .job-location img,
+  .card-experience .job-duration img {
+    width: 35px;
+    height: 35px;
+  }
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    font-weight: 400;
+  }
+  .card-experience .job-duration {
+    font-style: italic;
+  }
+}
+@media (min-width: 321px) and (max-width: 468px) {
+  .card-experience {
+    width: 100%;
+    height: 159px;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .card-experience .job-name,
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    color: #0a1e39;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .card-experience .job-name img,
+  .card-experience .job-location img,
+  .card-experience .job-duration img {
+    width: 35px;
+    height: 35px;
+  }
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .card-experience .job-duration {
+    font-style: italic;
+  }
+}
+@media (min-width: 469px) and (max-width: 768px) {
+  .card-experience {
+    min-width: 300px;
+    height: 159px;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .card-experience .job-name,
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    color: #0a1e39;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .card-experience .job-name img,
+  .card-experience .job-location img,
+  .card-experience .job-duration img {
+    width: 35px;
+    height: 35px;
+  }
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .card-experience .job-duration {
+    font-style: italic;
+  }
+}
+@media (min-width: 769px) and (max-width: 1076px) {
+  .card-experience {
+    min-width: 300px;
+    height: 159px;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .card-experience .job-name,
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    color: #0a1e39;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .card-experience .job-name img,
+  .card-experience .job-location img,
+  .card-experience .job-duration img {
+    width: 35px;
+    height: 35px;
+  }
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .card-experience .job-duration {
+    font-style: italic;
+  }
+}
+@media (min-width: 1077px) {
+  .card-experience {
+    min-width: 300px;
+    height: 159px;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .card-experience .job-name,
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    color: #0a1e39;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .card-experience .job-name img,
+  .card-experience .job-location img,
+  .card-experience .job-duration img {
+    width: 35px;
+    height: 35px;
+  }
+  .card-experience .job-location,
+  .card-experience .job-duration {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .card-experience .job-duration {
+    font-style: italic;
+  }
 }
 
 .loading {

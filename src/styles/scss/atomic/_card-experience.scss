@@ -1,0 +1,177 @@
+.card-experience {
+  cursor: alias;
+  background-color: #fff;
+  font-weight: 500;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.274);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px 2px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+
+  @include media.xs {
+    width: 100%;
+    height: 159px;
+    padding: 0 12px;
+    border-radius: 5px;
+
+    .job-name,
+    .job-location,
+    .job-duration {
+      color: #0a1e39;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .job-location,
+    .job-duration {
+      font-weight: 400;
+    }
+
+    .job-duration {
+      font-style: italic;
+    }
+  }
+
+  @include media.sm {
+    width: 100%;
+    height: 159px;
+    padding: 0 20px;
+    border-radius: 5px;
+
+    .job-name,
+    .job-location,
+    .job-duration {
+      color: #0a1e39;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .job-location,
+    .job-duration {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .job-duration {
+      font-style: italic;
+    }
+  }
+
+  @include media.md {
+    min-width: 300px;
+    height: 159px;
+    padding: 0 20px;
+    border-radius: 5px;
+
+    .job-name,
+    .job-location,
+    .job-duration {
+      color: #0a1e39;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .job-location,
+    .job-duration {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .job-duration {
+      font-style: italic;
+    }
+  }
+
+  @include media.lg {
+    min-width: 300px;
+    height: 159px;
+    padding: 0 20px;
+    border-radius: 5px;
+
+    .job-name,
+    .job-location,
+    .job-duration {
+      color: #0a1e39;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .job-location,
+    .job-duration {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .job-duration {
+      font-style: italic;
+    }
+  }
+  @include media.xl {
+    min-width: 300px;
+    height: 159px;
+    padding: 0 20px;
+    border-radius: 5px;
+
+    .job-name,
+    .job-location,
+    .job-duration {
+      color: #0a1e39;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .job-location,
+    .job-duration {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .job-duration {
+      font-style: italic;
+    }
+  }
+}

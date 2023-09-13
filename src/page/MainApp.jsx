@@ -11,7 +11,7 @@ const MainApp = () => {
         }, loadTime)
     })
     return (
-        <main>
+        <main className="main-app">
             {/* Jumbotron */}
             <JumbotronComponent />
             {/* Expatise */}

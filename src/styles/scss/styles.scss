@@ -2,13 +2,13 @@
 
 @import "variables";
 @import "root";
-@import "about";
 @import "detail-project";
 
 // Molecules
 @import "./molecules/container";
 @import "./molecules/main-page";
 @import "./molecules/project-page";
+@import "./molecules/about_page";
 @import "./molecules/bottom-navigation";
 
 // Atomic
@@ -18,4 +18,5 @@
 @import "./atomic/expartise";
 @import "./atomic/footer";
 @import "./atomic/project-card";
+@import "./atomic/card-experience";
 @import "./atomic/loading";
