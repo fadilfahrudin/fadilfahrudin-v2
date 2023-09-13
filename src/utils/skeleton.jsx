@@ -17,4 +17,5 @@ export default function onLoadData() {
     pLoad.forEach((item) => {
         item.classList.remove('p-load');
     })
+    return null;
 }
