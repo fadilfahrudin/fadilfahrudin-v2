@@ -34,6 +34,362 @@
   border: 1px solid #0a1e39;
 }
 
+@media (max-width: 320px) {
+  .detail-page {
+    width: 100%;
+  }
+  .detail-page .detail-article-wrapp {
+    gap: 10px;
+  }
+  .detail-page .detail-article-wrapp main {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .detail-page .detail-article-wrapp main .banner-content {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
+    margin: 10px 0;
+  }
+  .detail-page .detail-article-wrapp main .banner-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .detail-page .detail-article-wrapp main .header-article {
+    font-size: 1.75rem;
+    color: #292828;
+    width: 80%;
+    min-height: 30px;
+    border-radius: 0.2rem;
+    margin-top: 30px;
+  }
+  .detail-page .detail-article-wrapp main .info-created {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .detail-page .detail-article-wrapp main .info-created .p {
+    min-width: 20%;
+    height: 10px;
+    border-radius: 0.1rem;
+    color: #d9d9d9;
+    font-size: 12px;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body {
+    min-width: max-content;
+    height: 45px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body p {
+    display: inline-block;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 12px;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp li .sos-item {
+    width: 20px;
+    height: 20px;
+  }
+  .detail-page .detail-article-wrapp main article {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .detail-page .detail-article-wrapp .btn-visit-project {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: #0a1e39;
+    background-color: lavender;
+    box-shadow: 0px 5px 10px -3px rgba(10, 30, 57, 0.3960784314);
+    cursor: pointer;
+  }
+  .detail-page .detail-article-wrapp .btn-visit-project:hover {
+    font-weight: 700;
+    color: #0a1e39;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px 2px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+}
+@media (min-width: 321px) and (max-width: 468px) {
+  .detail-page {
+    width: 100%;
+  }
+  .detail-page .detail-article-wrapp {
+    gap: 10px;
+  }
+  .detail-page .detail-article-wrapp main {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .detail-page .detail-article-wrapp main .banner-content {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
+    margin: 10px 0;
+  }
+  .detail-page .detail-article-wrapp main .banner-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .detail-page .detail-article-wrapp main .header-article {
+    font-size: 1.75rem;
+    color: #292828;
+    width: 80%;
+    min-height: 30px;
+    border-radius: 0.2rem;
+    margin-top: 30px;
+  }
+  .detail-page .detail-article-wrapp main .info-created {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .detail-page .detail-article-wrapp main .info-created .p {
+    min-width: 20%;
+    height: 10px;
+    border-radius: 0.1rem;
+    color: #d9d9d9;
+    font-size: 12px;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body {
+    min-width: max-content;
+    height: 45px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body p {
+    display: inline-block;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 12px;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp li .sos-item {
+    width: 20px;
+    height: 20px;
+  }
+  .detail-page .detail-article-wrapp main article {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .detail-page .detail-article-wrapp .btn-visit-project {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: #0a1e39;
+    background-color: lavender;
+    box-shadow: 0px 5px 10px -3px rgba(10, 30, 57, 0.3960784314);
+    cursor: pointer;
+  }
+  .detail-page .detail-article-wrapp .btn-visit-project:hover {
+    font-weight: 700;
+    color: #0a1e39;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px 2px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+}
+@media (min-width: 469px) and (max-width: 768px) {
+  .detail-page {
+    width: 100%;
+  }
+  .detail-page .detail-article-wrapp {
+    gap: 10px;
+  }
+  .detail-page .detail-article-wrapp main {
+    padding-top: 30px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .detail-page .detail-article-wrapp main .banner-content {
+    width: 100%;
+    height: 254px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
+    margin: 10px 0;
+  }
+  .detail-page .detail-article-wrapp main .banner-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .detail-page .detail-article-wrapp main .header-article {
+    font-size: 2.75rem;
+    color: #292828;
+    width: 80%;
+    min-height: 40px;
+    border-radius: 0.5rem;
+    margin-top: 30px;
+  }
+  .detail-page .detail-article-wrapp main .info-created {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .detail-page .detail-article-wrapp main .info-created .p {
+    min-width: 20%;
+    height: 20px;
+    border-radius: 0.25rem;
+    color: #d9d9d9;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body {
+    min-width: max-content;
+    height: 50px;
+    padding: 5px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body p {
+    display: inline-block;
+    font-weight: 400;
+    color: #d9d9d9;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp li .sos-item {
+    width: 30px;
+    height: 30px;
+  }
+  .detail-page .detail-article-wrapp main article {
+    font-size: 1.25rem;
+    line-height: 35px;
+  }
+  .detail-page .detail-article-wrapp .btn-visit-project {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: #0a1e39;
+    background-color: lavender;
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
+    cursor: pointer;
+  }
+  .detail-page .detail-article-wrapp .btn-visit-project:hover {
+    font-weight: 700;
+    color: #0a1e39;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px 2px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1076px) {
+  .detail-page {
+    width: 100%;
+  }
+  .detail-page .detail-article-wrapp {
+    gap: 10px;
+  }
+  .detail-page .detail-article-wrapp main {
+    padding-top: 30px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .detail-page .detail-article-wrapp main .banner-content {
+    width: 100%;
+    height: 254px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
+    margin: 10px 0;
+  }
+  .detail-page .detail-article-wrapp main .banner-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .detail-page .detail-article-wrapp main .header-article {
+    font-size: 2.75rem;
+    color: #292828;
+    width: 80%;
+    min-height: 40px;
+    border-radius: 0.5rem;
+    margin-top: 30px;
+  }
+  .detail-page .detail-article-wrapp main .info-created {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .detail-page .detail-article-wrapp main .info-created .p {
+    min-width: 20%;
+    height: 20px;
+    border-radius: 0.25rem;
+    color: #d9d9d9;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body {
+    min-width: max-content;
+    height: 50px;
+    padding: 5px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body p {
+    display: inline-block;
+    font-weight: 400;
+    color: #d9d9d9;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+  }
+  .detail-page .detail-article-wrapp main .info-created .socialmedia-body .sos-wrapp li .sos-item {
+    width: 30px;
+    height: 30px;
+  }
+  .detail-page .detail-article-wrapp main article {
+    font-size: 1.25rem;
+    line-height: 35px;
+  }
+  .detail-page .detail-article-wrapp .btn-visit-project {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: #0a1e39;
+    background-color: lavender;
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
+    cursor: pointer;
+  }
+  .detail-page .detail-article-wrapp .btn-visit-project:hover {
+    font-weight: 700;
+    color: #0a1e39;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px 2px #0a1e39;
+    outline: #0a1e39 solid 2px;
+  }
+}
 @media (min-width: 1077px) {
   .detail-page {
     width: 70%;
@@ -192,7 +548,7 @@
   }
   .main-app .main-project .card-wrapp .card .main-card-title {
     padding: 0 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     height: 260px;
     position: relative;
     overflow: hidden;
@@ -244,7 +600,8 @@
   }
   .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
-    font-size: 20px;
+    font-style: normal;
+    font-size: 14px;
     transition: all 0.5s linear;
   }
   @keyframes btnArrowCircleClosed {
@@ -342,8 +699,8 @@
     transition: all 0.5s ease-in-out;
   }
   .main-app .main-project .card-wrapp .card .main-card-title {
-    padding: 0 50px;
-    padding-top: 50px;
+    padding: 0 20px;
+    padding-top: 30px;
     height: 260px;
     position: relative;
     overflow: hidden;
@@ -395,7 +752,8 @@
   }
   .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
-    font-size: 20px;
+    font-size: 16px;
+    font-style: normal;
     transition: all 0.5s linear;
   }
   @keyframes btnArrowCircleClosed {
@@ -546,7 +904,8 @@
   }
   .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
-    font-size: 20px;
+    font-size: 16px;
+    font-style: normal;
     transition: all 0.5s linear;
   }
   @keyframes btnArrowCircleClosed {
@@ -697,7 +1056,8 @@
   }
   .main-app .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
-    font-size: 20px;
+    font-style: normal;
+    font-size: 18px;
     transition: all 0.5s linear;
   }
   @keyframes btnArrowCircleClosed {
@@ -850,6 +1210,7 @@
   }
   .main-project .card-wrapp .card .main-card-title .wrapp-btn-circle .arrowicon {
     color: #292828;
+    font-style: normal;
     font-size: 20px;
     transition: all 0.5s linear;
   }
@@ -921,6 +1282,7 @@
     gap: 40px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10px;
   }
 }
 @media (min-width: 321px) and (max-width: 468px) {
@@ -933,6 +1295,7 @@
     gap: 40px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10px;
   }
 }
 @media (min-width: 469px) and (max-width: 768px) {

@@ -1,4 +1,5 @@
 import logoFadil from './F3.png';
+import logoRn from './react.svg';
 import heroImg from './hero.svg';
 import logoBootstrap from './bootstrap.svg';
 import logoHtml from './html-5.svg';
@@ -19,9 +20,12 @@ import gerakanInfaqNutrisi from './gerakan-infaq-nutrisi.png';
 import studyApp from './study-app.png';
 import defaulBanner from './default-background-article.svg';
 import defaulUser from './user-profile-default.svg';
-import defaultLogo from './logo-project-default.svg'
+import defaultLogo from './logo-project-default.svg';
+import logoGithub2 from './github-1.svg';
 
 export {
+    logoGithub2,
+    logoRn,
     defaulBanner,
     defaulUser,
     defaultLogo,

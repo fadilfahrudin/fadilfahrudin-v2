@@ -1,6 +1,8 @@
-// import onLoadData from "../../utils/skeleton"
+import onLoadData from "../../utils/skeleton";
+
 // eslint-disable-next-line react/prop-types
 const CardComponent = ({ title, subtitle, backgroundColor, img, nameProject, idCard, imgWidth, imgHeight, link }) => {
+
     const stylesCard = {
         backgroundColor: backgroundColor,
     }
@@ -39,11 +41,11 @@ const CardComponent = ({ title, subtitle, backgroundColor, img, nameProject, idC
                 </div>
                 <button type="button" className="wrapp-btn-circle" onMouseLeave={btnOverLeave} onMouseOver={btnOver}>
                     <i className="btn-arrowCircle"></i>
-                    <i className="arrowicon">&rarr;</i>
+                    <i className="arrowicon">&#10132;</i>
                 </button>
             </div>
             <div className="wrapp-img-project">
-                <img src={img} className="img-project" alt={nameProject} width={imgWidth} height={imgHeight} />
+                <img src={img} className="img-project" alt={nameProject} width={imgWidth} height={imgHeight} onLoad={() => onLoadData()} />
             </div>
         </div>
     )

@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { gerakanInfaqNutrisi, sbAdmin, sbApps, studyApp } from "../../assets/img";
 import CardComponent from "./CardComponent";
+import onLoadData from "../../utils/skeleton";
 
 const MainContentComponent = () => {
-
+    window.addEventListener('load', () => {
+        onLoadData();
+    })
     const navigate = useNavigate()
     return (
         <main className="main-project">

@@ -1,3 +1,379 @@
+@include media.xs {
+  .detail-page {
+    width: 100%;
+    // margin: 0 auto;
+    .detail-article-wrapp {
+      gap: 10px;
+      main {
+        padding-top: 20px;
+        width: 100%;
+        .banner-content {
+          width: 100%;
+          height: 140px;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0px 10px 15px -3px $color-shadow;
+          margin: 10px 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+          }
+        }
+        .header-article {
+          font-size: 1.75rem;
+          color: $text-dark;
+          width: 80%;
+          min-height: 30px;
+          border-radius: 0.2rem;
+          margin-top: 30px;
+        }
+        .info-created {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          .p {
+            min-width: 20%;
+            height: 10px;
+            border-radius: 0.1rem;
+            color: $color-white-dark;
+            font-size: 12px;
+          }
+          .socialmedia-body {
+            min-width: max-content;
+            height: 45px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            p {
+              display: inline-block;
+              font-weight: 400;
+              color: $color-white-dark;
+              font-size: 12px;
+            }
+            .sos-wrapp {
+              display: flex;
+              gap: 5px;
+              list-style: none;
+              li {
+                .sos-item {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+        }
+        article {
+          font-size: 1rem;
+          line-height: 30px;
+        }
+      }
+
+      .btn-visit-project {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        color: $text-navy;
+        background-color: $bg-white-thin;
+        box-shadow: 0px 5px 10px -3px $color-shadow;
+        cursor: pointer;
+        &:hover {
+          font-weight: 700;
+          color: $text-navy;
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 0px 2px $color-dark-navy;
+          outline: $color-dark-navy solid 2px;
+        }
+      }
+    }
+  }
+}
+
+@include media.sm {
+  .detail-page {
+    width: 100%;
+    // margin: 0 auto;
+    .detail-article-wrapp {
+      gap: 10px;
+      main {
+        padding-top: 20px;
+        width: 100%;
+        .banner-content {
+          width: 100%;
+          height: 140px;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0px 10px 15px -3px $color-shadow;
+          margin: 10px 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+          }
+        }
+        .header-article {
+          font-size: 1.75rem;
+          color: $text-dark;
+          width: 80%;
+          min-height: 30px;
+          border-radius: 0.2rem;
+          margin-top: 30px;
+        }
+        .info-created {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          .p {
+            min-width: 20%;
+            height: 10px;
+            border-radius: 0.1rem;
+            color: $color-white-dark;
+            font-size: 12px;
+          }
+          .socialmedia-body {
+            min-width: max-content;
+            height: 45px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            p {
+              display: inline-block;
+              font-weight: 400;
+              color: $color-white-dark;
+              font-size: 12px;
+            }
+            .sos-wrapp {
+              display: flex;
+              gap: 5px;
+              list-style: none;
+              li {
+                .sos-item {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+        }
+        article {
+          font-size: 1rem;
+          line-height: 30px;
+        }
+      }
+
+      .btn-visit-project {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        color: $text-navy;
+        background-color: $bg-white-thin;
+        box-shadow: 0px 5px 10px -3px $color-shadow;
+        cursor: pointer;
+        &:hover {
+          font-weight: 700;
+          color: $text-navy;
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 0px 2px $color-dark-navy;
+          outline: $color-dark-navy solid 2px;
+        }
+      }
+    }
+  }
+}
+
+@include media.md {
+  .detail-page {
+    width: 100%;
+    .detail-article-wrapp {
+      gap: 10px;
+      main {
+        padding-top: 30px;
+        width: 100%;
+        overflow-x: hidden;
+        .banner-content {
+          width: 100%;
+          height: 254px;
+          border-radius: 1.25rem;
+          overflow: hidden;
+          box-shadow: 0px 10px 15px -3px $color-shadow;
+          margin: 10px 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .header-article {
+          font-size: 2.75rem;
+          color: $text-dark;
+          width: 80%;
+          min-height: 40px;
+          border-radius: 0.5rem;
+          margin-top: 30px;
+        }
+        .info-created {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          .p {
+            min-width: 20%;
+            height: 20px;
+            border-radius: 0.25rem;
+            color: $color-white-dark;
+          }
+          .socialmedia-body {
+            min-width: max-content;
+            height: 50px;
+            padding: 5px 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            p {
+              display: inline-block;
+              font-weight: 400;
+              color: $color-white-dark;
+            }
+            .sos-wrapp {
+              display: flex;
+              gap: 5px;
+              list-style: none;
+              li {
+                .sos-item {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+          }
+        }
+        article {
+          font-size: 1.25rem;
+          line-height: 35px;
+        }
+      }
+
+      .btn-visit-project {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        color: $text-navy;
+        background-color: $bg-white-thin;
+        box-shadow: 0px 10px 15px -3px $color-shadow;
+        cursor: pointer;
+      }
+
+      .btn-visit-project:hover {
+        font-weight: 700;
+        color: $text-navy;
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 0px 2px $color-dark-navy;
+        outline: $color-dark-navy solid 2px;
+      }
+    }
+  }
+}
+
+@include media.lg {
+  .detail-page {
+    width: 100%;
+    .detail-article-wrapp {
+      gap: 10px;
+      main {
+        padding-top: 30px;
+        width: 100%;
+        overflow-x: hidden;
+        .banner-content {
+          width: 100%;
+          height: 254px;
+          border-radius: 1.25rem;
+          overflow: hidden;
+          box-shadow: 0px 10px 15px -3px $color-shadow;
+          margin: 10px 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .header-article {
+          font-size: 2.75rem;
+          color: $text-dark;
+          width: 80%;
+          min-height: 40px;
+          border-radius: 0.5rem;
+          margin-top: 30px;
+        }
+        .info-created {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          .p {
+            min-width: 20%;
+            height: 20px;
+            border-radius: 0.25rem;
+            color: $color-white-dark;
+          }
+          .socialmedia-body {
+            min-width: max-content;
+            height: 50px;
+            padding: 5px 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            p {
+              display: inline-block;
+              font-weight: 400;
+              color: $color-white-dark;
+            }
+            .sos-wrapp {
+              display: flex;
+              gap: 5px;
+              list-style: none;
+              li {
+                .sos-item {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+          }
+        }
+        article {
+          font-size: 1.25rem;
+          line-height: 35px;
+        }
+      }
+
+      .btn-visit-project {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        color: $text-navy;
+        background-color: $bg-white-thin;
+        box-shadow: 0px 10px 15px -3px $color-shadow;
+        cursor: pointer;
+      }
+
+      .btn-visit-project:hover {
+        font-weight: 700;
+        color: $text-navy;
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 0px 2px $color-dark-navy;
+        outline: $color-dark-navy solid 2px;
+      }
+    }
+  }
+}
+
 @include media.xl {
   .detail-page {
     width: 70%;

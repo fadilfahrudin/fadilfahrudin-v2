@@ -2,13 +2,8 @@ import { ExpatiseComponent, JumbotronComponent, MainContentComponent } from "../
 import onLoadData from "../utils/skeleton";
 
 const MainApp = () => {
-    let startTime = performance.now();
     window.addEventListener('load', () => {
-        let endTime = performance.now();
-        let loadTime = endTime - startTime;
-        setInterval(() => {
-            onLoadData();
-        }, loadTime)
+        onLoadData();
     })
     return (
         <main className="main-app">

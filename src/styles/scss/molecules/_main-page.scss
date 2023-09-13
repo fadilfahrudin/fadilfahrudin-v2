@@ -34,7 +34,7 @@
           }
           .main-card-title {
             padding: 0 20px;
-            padding-top: 20px;
+            padding-top: 30px;
             height: 260px;
             position: relative;
             overflow: hidden;
@@ -84,7 +84,8 @@
               }
               .arrowicon {
                 color: $text-dark;
-                font-size: 20px;
+                font-style: normal;
+                font-size: 14px;
                 transition: all 0.5s linear;
               }
 
@@ -188,8 +189,8 @@
             transition: all 0.5s ease-in-out;
           }
           .main-card-title {
-            padding: 0 50px;
-            padding-top: 50px;
+            padding: 0 20px;
+            padding-top: 30px;
             height: 260px;
             position: relative;
             overflow: hidden;
@@ -239,7 +240,8 @@
               }
               .arrowicon {
                 color: $text-dark;
-                font-size: 20px;
+                font-size: 16px;
+                font-style: normal;
                 transition: all 0.5s linear;
               }
 
@@ -394,7 +396,8 @@
               }
               .arrowicon {
                 color: $text-dark;
-                font-size: 20px;
+                font-size: 16px;
+                font-style: normal;
                 transition: all 0.5s linear;
               }
 
@@ -549,7 +552,8 @@
               }
               .arrowicon {
                 color: $text-dark;
-                font-size: 20px;
+                font-style: normal;
+                font-size: 18px;
                 transition: all 0.5s linear;
               }
 
@@ -706,6 +710,7 @@
             }
             .arrowicon {
               color: $text-dark;
+              font-style: normal;
               font-size: 20px;
               transition: all 0.5s linear;
             }
