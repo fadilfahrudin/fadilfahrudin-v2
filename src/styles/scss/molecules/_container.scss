@@ -20,6 +20,7 @@
 }
 @include media.xl {
   .container {
-    margin: 0 80px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }

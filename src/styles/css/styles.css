@@ -254,7 +254,8 @@
 }
 @media (min-width: 1077px) {
   .container {
-    margin: 0 80px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }
 @media (max-width: 320px) {
@@ -882,12 +883,12 @@
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 50px 0;
+    justify-content: space-between;
+    gap: 35px 2%;
   }
   .main-project .card-wrapp .card {
-    width: 450px;
+    width: 48%;
     height: 550px;
     position: relative;
     overflow-y: hidden;
@@ -1940,6 +1941,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 50px;
   }
   .navigation .home-brand {
     font-size: 12px;
@@ -2160,6 +2162,7 @@
     align-items: center;
     gap: 52px;
     min-height: 90vh;
+    padding: 0 50px;
   }
   .jumbotron .jumbotron-text .btn-resume {
     width: 305px;
@@ -2659,6 +2662,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    padding: 0 50px;
   }
   footer .line-break {
     height: 2px;
