@@ -21,7 +21,10 @@ Portfolio and also history project from Fadil Fahrudin
 
 1. Clone this Project
 2. Run in terminal :
-     - Install all depedency **npm install**
-     - Run applikasi **npm run dev**
-> For deploy run **npm run build**
+     - **npm install** 
+     >For Install all depedency.
+     - **npm run dev**
+     >For Run applikasi.
+     - **npm run dev**
+     > For deploy 
 
