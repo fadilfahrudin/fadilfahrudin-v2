@@ -1,6 +1,6 @@
 # Portfolio 1.1.2
 ## Description
-Portfolio and also history project from Fadil Fahrudin
+Portfolio and also a history project from Fadil Fahrudin
 
 ### Features
 - Project Blog
@@ -22,9 +22,9 @@ Portfolio and also history project from Fadil Fahrudin
 1. Clone this Project
 2. Run in terminal :
      - **npm install** 
-     >For Install all depedency.
+     >For Install all dependency.
      - **npm run dev**
-     >For Run applikasi.
+     >For Run application.
      - **npm run dev**
      > For deploy 
 
