@@ -103,13 +103,16 @@
     line-height: 30px;
   }
   .detail-page .detail-article-wrapp .btn-visit-project {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     width: 100%;
-    height: 30px;
+    padding: 10px 0;
     border-radius: 10px;
-    font-size: 0.8rem;
     color: #0a1e39;
     background-color: lavender;
-    box-shadow: 0px 5px 10px -3px rgba(10, 30, 57, 0.3960784314);
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
+    font-size: 0.8rem;
     cursor: pointer;
   }
   .detail-page .detail-article-wrapp .btn-visit-project:hover {
@@ -193,13 +196,15 @@
     line-height: 30px;
   }
   .detail-page .detail-article-wrapp .btn-visit-project {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     width: 100%;
-    height: 30px;
+    padding: 10px 0;
     border-radius: 10px;
-    font-size: 0.8rem;
     color: #0a1e39;
     background-color: lavender;
-    box-shadow: 0px 5px 10px -3px rgba(10, 30, 57, 0.3960784314);
+    box-shadow: 0px 10px 15px -3px rgba(10, 30, 57, 0.3960784314);
     cursor: pointer;
   }
   .detail-page .detail-article-wrapp .btn-visit-project:hover {
@@ -282,8 +287,11 @@
     line-height: 35px;
   }
   .detail-page .detail-article-wrapp .btn-visit-project {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     width: 100%;
-    height: 50px;
+    padding: 10px 0;
     border-radius: 10px;
     color: #0a1e39;
     background-color: lavender;
@@ -370,8 +378,11 @@
     line-height: 35px;
   }
   .detail-page .detail-article-wrapp .btn-visit-project {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     width: 100%;
-    height: 50px;
+    padding: 10px 0;
     border-radius: 10px;
     color: #0a1e39;
     background-color: lavender;
@@ -459,8 +470,11 @@
     line-height: 35px;
   }
   .detail-page .detail-article-wrapp .btn-visit-project {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     width: 100%;
-    height: 50px;
+    padding: 10px 0;
     border-radius: 10px;
     color: #0a1e39;
     background-color: lavender;

@@ -12,6 +12,7 @@ const DetailProject = () => {
     const [createdAt, setCreatedAt] = useState();
     const [author, setAuthor] = useState('');
     const [techId, settechId] = useState('');
+    const [projectUrl, setProjectUrl] = useState('');
     const [techStacks, setTechStacks] = useState([]);
     const techStackId = techId.split(",");
 
@@ -30,6 +31,7 @@ const DetailProject = () => {
             setDescription(data.description)
             setCreatedAt(data.created_at)
             settechId(data.techStackId)
+            setProjectUrl(data.projectLink)
             onLoadData();
         } catch (error) {
             console.log(error)
@@ -110,7 +112,7 @@ const DetailProject = () => {
                         {/* End Skeleton */}
                     </article>
                 </main>
-                <button type="button" className="btn-visit-project">Visit project app</button>
+                <a href={projectUrl} className="btn-visit-project">Visit project app</a>
             </div>
         </div>
     )
