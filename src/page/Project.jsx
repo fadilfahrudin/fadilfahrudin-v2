@@ -17,7 +17,7 @@ const Project = () => {
         try {
             const response = await fetch(`${APIconfig.baseUrl}/articles/project`)
             const articles = await response.json();
-            setArticles(articles.result);
+            setArticles(articles.results);
             setInterval(() => {
                 onLoadData();
             }, 500)
