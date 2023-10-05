@@ -15,7 +15,7 @@ const Project = () => {
 
     const getProject = async () => {
         try {
-            const response = await fetch(`${APIconfig.baseUrl}/articles`)
+            const response = await fetch(`${APIconfig.baseUrl}/articles?types=project`)
             const articles = await response.json();
             setArticles(articles.result);
             setInterval(() => {
