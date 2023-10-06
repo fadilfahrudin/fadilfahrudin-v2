@@ -112,7 +112,7 @@ const DetailProject = () => {
                         {/* End Skeleton */}
                     </article>
                 </main>
-                <a href={projectUrl} className="btn-visit-project">Visit project app</a>
+                <a target="_blank" rel="noopener noreferrer" href={projectUrl} className="btn-visit-project">Visit project app</a>
             </div>
         </div>
     )
